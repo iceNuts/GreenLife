@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ZrM-gr-iyV">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Market View Controller - First-->
+        <scene sceneID="W3I-pn-N6e">
+            <objects>
+                <viewController title="First" id="CZ4-MO-1fc" customClass="LZMarketViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="770-os-AjW"/>
+                        <viewControllerLayoutGuide type="bottom" id="6I0-7q-z0f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2VE-Yg-loa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Market" image="basket-small.png" id="u1e-5L-l1D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="-946"/>
+        </scene>
+        <!--Market Detail View Controller-->
+        <scene sceneID="DU6-6c-iXF">
+            <objects>
+                <viewController storyboardIdentifier="LZMarketDetail" id="Vti-EQ-364" customClass="LZMarketDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PLP-iq-8Io"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lqn-i7-p91"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mzi-gN-Rne">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0hf-pZ-T5C">
+                                <rect key="frame" x="20" y="73" width="77" height="70"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Schnukes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000000000000009" translatesAutoresizingMaskIntoConstraints="NO" id="w9a-37-pob">
+                                <rect key="frame" x="105" y="73" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DELMAR LOOPSDFKDSLJLKJKLJDLSFLDSKFJDSLKFJLD" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000000000000009" preferredMaxLayoutWidth="195" translatesAutoresizingMaskIntoConstraints="NO" id="3n3-bk-uFC">
+                                <rect key="frame" x="105" y="102" width="195" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fgl-Ia-htb">
+                                <rect key="frame" x="0.0" y="151" width="320" height="417"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dlc-o7-fi6">
+                                <rect key="frame" x="248" y="76" width="15" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="liked!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ede-6l-uNr">
+                                <rect key="frame" x="271" y="73" width="29" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="likeBtn" destination="dlc-o7-fi6" id="Vr3-G8-M5y"/>
+                        <outlet property="likeLabel" destination="ede-6l-uNr" id="Cmg-nt-z4f"/>
+                        <outlet property="marketAddress" destination="3n3-bk-uFC" id="bOQ-Mj-tD2"/>
+                        <outlet property="marketInfoList" destination="fgl-Ia-htb" id="286-Tc-JCV"/>
+                        <outlet property="marketName" destination="w9a-37-pob" id="NmV-4E-Wfd"/>
+                        <outlet property="photoImageView" destination="0hf-pZ-T5C" id="6ZC-UK-PYK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ob-xm-z8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="-946"/>
+        </scene>
+        <!--Sales View Controller - Discount-->
+        <scene sceneID="BVm-1g-dFw">
+            <objects>
+                <viewController id="2dm-jE-bt8" customClass="LZSalesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UoH-7O-nYi"/>
+                        <viewControllerLayoutGuide type="bottom" id="eCu-0c-x0f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gY8-zA-Xcg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="H30-I8-elQ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="454"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Discount" image="arrow-24hours-small.png" id="S0d-NK-Foc"/>
+                    <connections>
+                        <outlet property="discountFoodList" destination="H30-I8-elQ" id="bjz-1X-Y6u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QlV-Fd-N0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="596"/>
+        </scene>
+        <!--Recipe View Controller - Recipe-->
+        <scene sceneID="XOo-fn-7XB">
+            <objects>
+                <viewController id="q2Q-Xi-Ln3" customClass="LZRecipeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="93o-9Y-cg7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Evg-af-UAo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SNh-yc-6Nm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recipe" image="burger-small.png" id="yDq-pI-NF2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EDi-gK-MGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="1363"/>
+        </scene>
+        <!--Recipe Detail View Controller-->
+        <scene sceneID="sqa-dk-Wax">
+            <objects>
+                <viewController storyboardIdentifier="LZRecipeDetail" id="XJz-ao-E91" customClass="LZRecipeDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EPV-y4-p65"/>
+                        <viewControllerLayoutGuide type="bottom" id="mzQ-Fr-Qd7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3xU-2I-Btk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nS3-3a-JEC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="573"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailWebView" destination="nS3-3a-JEC" id="fMP-6S-10g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Jm-qK-TfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1179" y="1363"/>
+        </scene>
+        <!--Recommendation View Controller - Second-->
+        <scene sceneID="ot8-2e-RuS">
+            <objects>
+                <viewController title="Second" id="QUy-BD-bpt" customClass="LZRecommendationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t5a-6d-iHy"/>
+                        <viewControllerLayoutGuide type="bottom" id="haH-Sk-4DZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gMD-aP-Fq6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recommendations" image="thumb-up-small.png" id="Z7h-1E-pvt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="-160"/>
+        </scene>
+        <!--Vegetable Detail View Controller-->
+        <scene sceneID="gvf-al-Cbq">
+            <objects>
+                <viewController storyboardIdentifier="LZVegetableDetail" id="1kg-RN-9Df" customClass="LZVegetableDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DrN-JB-kna"/>
+                        <viewControllerLayoutGuide type="bottom" id="wIQ-Th-P3k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KWm-oZ-mP2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tomato" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5M-JU-CTi">
+                                <rect key="frame" x="116" y="97" width="184" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OwL-BF-xS3">
+                                <rect key="frame" x="24" y="155" width="111" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.55000000000000004" preferredMaxLayoutWidth="267" translatesAutoresizingMaskIntoConstraints="NO" id="Q4c-dL-bH5">
+                                <rect key="frame" x="33" y="192" width="267" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">The peach is a deciduous tree, native to North-West China, in the region between the Tarim basin and the north slopes of the Kunlun Shan mountains, where it was first domesticated and cultivated. It bears an edible juicy fruit also called a peach.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="2" height="1"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hS1-Jy-9c8">
+                                <rect key="frame" x="20" y="183" width="280" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fIc-47-qrY">
+                                <rect key="frame" x="20" y="396" width="280" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dPk-ZN-ctI">
+                                <rect key="frame" x="24" y="78" width="84" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="jGl-Yd-vYJ">
+                                <rect key="frame" x="20" y="405" width="280" height="143"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="foodDescription" destination="Q4c-dL-bH5" id="HS7-mm-wbQ"/>
+                        <outlet property="foodName" destination="o5M-JU-CTi" id="H65-PV-ezj"/>
+                        <outlet property="foodPhoto" destination="dPk-ZN-ctI" id="Fvf-ly-kdS"/>
+                        <outlet property="sellerList" destination="jGl-Yd-vYJ" id="qbR-7Q-ap1"/>
+                        <outlet property="starRateImageView" destination="OwL-BF-xS3" id="AJm-j8-wZQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXA-rE-ldm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1099" y="-160"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tOB-dp-JLR">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="ZrM-gr-iyV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k6D-G6-cWW">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8YX-ce-x5E" kind="relationship" relationship="rootViewController" id="bVz-bT-AvK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q4h-Wh-cFi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-409" y="180"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Vex-rW-GRa">
+            <objects>
+                <tabBarController id="8YX-ce-x5E" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="A9K-Nw-UrQ"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
+                        <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
+                        <segue destination="2dm-jE-bt8" kind="relationship" relationship="viewControllers" id="daA-we-0DM"/>
+                        <segue destination="q2Q-Xi-Ln3" kind="relationship" relationship="viewControllers" id="K0b-uB-ZEF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="180"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow-24hours-small.png" width="30" height="30"/>
+        <image name="basket-small.png" width="29" height="30"/>
+        <image name="burger-small.png" width="30" height="30"/>
+        <image name="thumb-up-small.png" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

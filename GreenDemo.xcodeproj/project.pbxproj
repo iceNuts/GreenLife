@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		433617A518D143AC002F9AE4 /* LZVegetableListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 433617A418D143AC002F9AE4 /* LZVegetableListDelegate.m */; };
+		433617A918D145AD002F9AE4 /* LZVegetableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 433617A818D145AD002F9AE4 /* LZVegetableCell.m */; };
+		433617AC18D149D7002F9AE4 /* LZRecipeListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 433617AB18D149D7002F9AE4 /* LZRecipeListDelegate.m */; };
+		433617B018D14C1F002F9AE4 /* LZReceipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 433617AF18D14C1F002F9AE4 /* LZReceipeCell.m */; };
+		433617BD18D158B4002F9AE4 /* NS-Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 433617BC18D158B4002F9AE4 /* NS-Extension.m */; };
+		433617C018D15CA8002F9AE4 /* LZRecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433617BF18D15CA8002F9AE4 /* LZRecipeDetailViewController.m */; };
+		433617C318D366E0002F9AE4 /* RecipeDetail.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433617C218D366E0002F9AE4 /* RecipeDetail.plist */; };
+		433617CF18D3AAEB002F9AE4 /* MarketDetail.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433617CE18D3AAEB002F9AE4 /* MarketDetail.plist */; };
+		435E44B918D636D700D545DD /* VegetableDetail.plist in Resources */ = {isa = PBXBuildFile; fileRef = 435E44B818D636D700D545DD /* VegetableDetail.plist */; };
+		435E44BC18D6579800D545DD /* Tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44BB18D6579800D545DD /* Tomato.png */; };
+		435E44BE18D657DE00D545DD /* Broccoli.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44BD18D657DE00D545DD /* Broccoli.png */; };
+		435E44C018D6582500D545DD /* Carrot.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44BF18D6582500D545DD /* Carrot.png */; };
+		435E44C218D6589500D545DD /* Banana.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44C118D6589500D545DD /* Banana.png */; };
+		435E44C418D658C400D545DD /* Onions.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44C318D658C400D545DD /* Onions.png */; };
+		435E44C618D65BE000D545DD /* Milk.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44C518D65BE000D545DD /* Milk.png */; };
+		435E44C818D65C9000D545DD /* Apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44C718D65C9000D545DD /* Apple.png */; };
+		435E44CA18D65CBF00D545DD /* Peach.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44C918D65CBF00D545DD /* Peach.png */; };
+		435E44CD18D6D62B00D545DD /* LZVegetableDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435E44CC18D6D62B00D545DD /* LZVegetableDetailViewController.m */; };
+		43B4588218EDF3AE00F3A835 /* LZSellerListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B4588118EDF3AE00F3A835 /* LZSellerListDelegate.m */; };
+		43B4588818EDFBF400F3A835 /* star_rate_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B4588318EDFBF400F3A835 /* star_rate_5.png */; };
+		43B4588918EDFBF400F3A835 /* star_rate_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B4588418EDFBF400F3A835 /* star_rate_4.png */; };
+		43B4588A18EDFBF400F3A835 /* star_rate_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B4588518EDFBF400F3A835 /* star_rate_3.png */; };
+		43B4588B18EDFBF400F3A835 /* star_rate_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B4588618EDFBF400F3A835 /* star_rate_2.png */; };
+		43B4588C18EDFBF400F3A835 /* star_rate_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B4588718EDFBF400F3A835 /* star_rate_1.png */; };
+		43B4588E18EE2E5100F3A835 /* basket_glow.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B4588D18EE2E5100F3A835 /* basket_glow.png */; };
+		43B4589018EE565400F3A835 /* basket_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B4588F18EE565400F3A835 /* basket_dark.png */; };
+		43B458A518EE682300F3A835 /* arrow-24hours-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B458A118EE682300F3A835 /* arrow-24hours-small.png */; };
+		43B458A618EE682300F3A835 /* basket-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B458A218EE682300F3A835 /* basket-small.png */; };
+		43B458A718EE682300F3A835 /* burger-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B458A318EE682300F3A835 /* burger-small.png */; };
+		43B458A818EE682300F3A835 /* thumb-up-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B458A418EE682300F3A835 /* thumb-up-small.png */; };
+		43B458AB18EE774800F3A835 /* LZFoodDiscountListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B458AA18EE774800F3A835 /* LZFoodDiscountListDelegate.m */; };
+		43B9AB5918D3ED7400AEC42A /* b_h_market.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB4A18D3ED7400AEC42A /* b_h_market.png */; };
+		43B9AB5A18D3ED7400AEC42A /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB4B18D3ED7400AEC42A /* burger.png */; };
+		43B9AB5B18D3ED7400AEC42A /* c_marketplace.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB4C18D3ED7400AEC42A /* c_marketplace.png */; };
+		43B9AB5C18D3ED7400AEC42A /* chicken_noodle.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB4D18D3ED7400AEC42A /* chicken_noodle.png */; };
+		43B9AB5D18D3ED7400AEC42A /* fish_fillet.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB4E18D3ED7400AEC42A /* fish_fillet.png */; };
+		43B9AB5E18D3ED7400AEC42A /* gnc.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB4F18D3ED7400AEC42A /* gnc.png */; };
+		43B9AB5F18D3ED7400AEC42A /* h_mart.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB5018D3ED7400AEC42A /* h_mart.png */; };
+		43B9AB6018D3ED7400AEC42A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB5118D3ED7400AEC42A /* icon.png */; };
+		43B9AB6118D3ED7400AEC42A /* m_f_foods.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB5218D3ED7400AEC42A /* m_f_foods.png */; };
+		43B9AB6218D3ED7400AEC42A /* morton_williams.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB5318D3ED7400AEC42A /* morton_williams.png */; };
+		43B9AB6318D3ED7400AEC42A /* new_york_supermarket.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB5418D3ED7400AEC42A /* new_york_supermarket.png */; };
+		43B9AB6418D3ED7400AEC42A /* paper_plane_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB5518D3ED7400AEC42A /* paper_plane_black.png */; };
+		43B9AB6518D3ED7400AEC42A /* steak.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB5618D3ED7400AEC42A /* steak.png */; };
+		43B9AB6618D3ED7400AEC42A /* user_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB5718D3ED7400AEC42A /* user_avatar.png */; };
+		43B9AB6718D3ED7400AEC42A /* whole_foods_market.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB5818D3ED7400AEC42A /* whole_foods_market.png */; };
+		43B9AB6E18D3F6D400AEC42A /* mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB6C18D3F6D400AEC42A /* mark.png */; };
+		43B9AB6F18D3F6D400AEC42A /* unmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB6D18D3F6D400AEC42A /* unmark.png */; };
+		43B9AB7218D57D6100AEC42A /* LZMarketInfoListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B9AB7118D57D6100AEC42A /* LZMarketInfoListDelegate.m */; };
+		43B9AB7418D60BDE00AEC42A /* MarketReview.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB7318D60BDE00AEC42A /* MarketReview.plist */; };
+		43E4AB2318C1138900061EB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4AB2218C1138900061EB4 /* Foundation.framework */; };
+		43E4AB2518C1138900061EB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4AB2418C1138900061EB4 /* CoreGraphics.framework */; };
+		43E4AB2718C1138900061EB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4AB2618C1138900061EB4 /* UIKit.framework */; };
+		43E4AB2D18C1138900061EB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43E4AB2B18C1138900061EB4 /* InfoPlist.strings */; };
+		43E4AB2F18C1138900061EB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB2E18C1138900061EB4 /* main.m */; };
+		43E4AB3318C1138900061EB4 /* LZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB3218C1138900061EB4 /* LZAppDelegate.m */; };
+		43E4AB3618C1138900061EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E4AB3418C1138900061EB4 /* Main.storyboard */; };
+		43E4AB3918C1138900061EB4 /* LZMarketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB3818C1138900061EB4 /* LZMarketViewController.m */; };
+		43E4AB3C18C1138900061EB4 /* LZRecommendationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB3B18C1138900061EB4 /* LZRecommendationViewController.m */; };
+		43E4AB3E18C1138900061EB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E4AB3D18C1138900061EB4 /* Images.xcassets */; };
+		43E4AB4518C1138A00061EB4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4AB4418C1138A00061EB4 /* XCTest.framework */; };
+		43E4AB4618C1138A00061EB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4AB2218C1138900061EB4 /* Foundation.framework */; };
+		43E4AB4718C1138A00061EB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4AB2618C1138900061EB4 /* UIKit.framework */; };
+		43E4AB4F18C1138A00061EB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43E4AB4D18C1138A00061EB4 /* InfoPlist.strings */; };
+		43E4AB5118C1138A00061EB4 /* GreenDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB5018C1138A00061EB4 /* GreenDemoTests.m */; };
+		43E4AB5E18C1162400061EB4 /* LZSalesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB5D18C1162400061EB4 /* LZSalesViewController.m */; };
+		43E4AB6118C1163800061EB4 /* LZRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB6018C1163800061EB4 /* LZRecipeViewController.m */; };
+		43E4AB6518C1170200061EB4 /* LZMarketListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB6418C1170200061EB4 /* LZMarketListDelegate.m */; };
+		43E4AB6918C118FA00061EB4 /* LZGlobalVars.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB6818C118FA00061EB4 /* LZGlobalVars.m */; };
+		43E4AB6F18C11C3300061EB4 /* LZSettingViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB6E18C11C3300061EB4 /* LZSettingViewDelegate.m */; };
+		43E4AB7B18C14F2B00061EB4 /* LZBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB7A18C14F2B00061EB4 /* LZBaseCell.m */; };
+		43E4AB7E18C1511700061EB4 /* LZMarketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB7D18C1511700061EB4 /* LZMarketCell.m */; };
+		43E4AB8318C448A400061EB4 /* LZMarketMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB8218C448A400061EB4 /* LZMarketMapViewController.m */; };
+		43E4AB8618C44C8F00061EB4 /* LZMMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB8518C44C8F00061EB4 /* LZMMBaseViewController.m */; };
+		43E4AB8E18C4E7EF00061EB4 /* LZContentBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB8D18C4E7EF00061EB4 /* LZContentBaseViewController.m */; };
+		43E4AB9118C4E9B500061EB4 /* LZMarketDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AB9018C4E9B500061EB4 /* LZMarketDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43E4AB4818C1138A00061EB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43E4AB1718C1138900061EB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43E4AB1E18C1138900061EB4;
+			remoteInfo = GreenDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		433617A318D143AC002F9AE4 /* LZVegetableListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZVegetableListDelegate.h; path = Delegates/LZVegetableListDelegate.h; sourceTree = "<group>"; };
+		433617A418D143AC002F9AE4 /* LZVegetableListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZVegetableListDelegate.m; path = Delegates/LZVegetableListDelegate.m; sourceTree = "<group>"; };
+		433617A718D145AD002F9AE4 /* LZVegetableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZVegetableCell.h; path = elements/LZVegetableCell.h; sourceTree = "<group>"; };
+		433617A818D145AD002F9AE4 /* LZVegetableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZVegetableCell.m; path = elements/LZVegetableCell.m; sourceTree = "<group>"; };
+		433617AA18D149D7002F9AE4 /* LZRecipeListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZRecipeListDelegate.h; path = Delegates/LZRecipeListDelegate.h; sourceTree = "<group>"; };
+		433617AB18D149D7002F9AE4 /* LZRecipeListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZRecipeListDelegate.m; path = Delegates/LZRecipeListDelegate.m; sourceTree = "<group>"; };
+		433617AE18D14C1F002F9AE4 /* LZReceipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZReceipeCell.h; path = elements/LZReceipeCell.h; sourceTree = "<group>"; };
+		433617AF18D14C1F002F9AE4 /* LZReceipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZReceipeCell.m; path = elements/LZReceipeCell.m; sourceTree = "<group>"; };
+		433617BB18D158B4002F9AE4 /* NS-Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NS-Extension.h"; path = "Extension/NS-Extension.h"; sourceTree = "<group>"; };
+		433617BC18D158B4002F9AE4 /* NS-Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NS-Extension.m"; path = "Extension/NS-Extension.m"; sourceTree = "<group>"; };
+		433617BE18D15CA8002F9AE4 /* LZRecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZRecipeDetailViewController.h; sourceTree = "<group>"; };
+		433617BF18D15CA8002F9AE4 /* LZRecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZRecipeDetailViewController.m; sourceTree = "<group>"; };
+		433617C218D366E0002F9AE4 /* RecipeDetail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RecipeDetail.plist; sourceTree = "<group>"; };
+		433617CE18D3AAEB002F9AE4 /* MarketDetail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MarketDetail.plist; sourceTree = "<group>"; };
+		435E44B818D636D700D545DD /* VegetableDetail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = VegetableDetail.plist; sourceTree = "<group>"; };
+		435E44BB18D6579800D545DD /* Tomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tomato.png; sourceTree = "<group>"; };
+		435E44BD18D657DE00D545DD /* Broccoli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Broccoli.png; sourceTree = "<group>"; };
+		435E44BF18D6582500D545DD /* Carrot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Carrot.png; sourceTree = "<group>"; };
+		435E44C118D6589500D545DD /* Banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banana.png; sourceTree = "<group>"; };
+		435E44C318D658C400D545DD /* Onions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Onions.png; sourceTree = "<group>"; };
+		435E44C518D65BE000D545DD /* Milk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Milk.png; sourceTree = "<group>"; };
+		435E44C718D65C9000D545DD /* Apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple.png; sourceTree = "<group>"; };
+		435E44C918D65CBF00D545DD /* Peach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peach.png; sourceTree = "<group>"; };
+		435E44CB18D6D62B00D545DD /* LZVegetableDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZVegetableDetailViewController.h; sourceTree = "<group>"; };
+		435E44CC18D6D62B00D545DD /* LZVegetableDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZVegetableDetailViewController.m; sourceTree = "<group>"; };
+		43B4588018EDF3AE00F3A835 /* LZSellerListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZSellerListDelegate.h; path = Delegates/LZSellerListDelegate.h; sourceTree = "<group>"; };
+		43B4588118EDF3AE00F3A835 /* LZSellerListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZSellerListDelegate.m; path = Delegates/LZSellerListDelegate.m; sourceTree = "<group>"; };
+		43B4588318EDFBF400F3A835 /* star_rate_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_rate_5.png; sourceTree = "<group>"; };
+		43B4588418EDFBF400F3A835 /* star_rate_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_rate_4.png; sourceTree = "<group>"; };
+		43B4588518EDFBF400F3A835 /* star_rate_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_rate_3.png; sourceTree = "<group>"; };
+		43B4588618EDFBF400F3A835 /* star_rate_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_rate_2.png; sourceTree = "<group>"; };
+		43B4588718EDFBF400F3A835 /* star_rate_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_rate_1.png; sourceTree = "<group>"; };
+		43B4588D18EE2E5100F3A835 /* basket_glow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basket_glow.png; sourceTree = "<group>"; };
+		43B4588F18EE565400F3A835 /* basket_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basket_dark.png; sourceTree = "<group>"; };
+		43B458A118EE682300F3A835 /* arrow-24hours-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-24hours-small.png"; sourceTree = "<group>"; };
+		43B458A218EE682300F3A835 /* basket-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basket-small.png"; sourceTree = "<group>"; };
+		43B458A318EE682300F3A835 /* burger-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "burger-small.png"; sourceTree = "<group>"; };
+		43B458A418EE682300F3A835 /* thumb-up-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumb-up-small.png"; sourceTree = "<group>"; };
+		43B458A918EE774800F3A835 /* LZFoodDiscountListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZFoodDiscountListDelegate.h; path = Delegates/LZFoodDiscountListDelegate.h; sourceTree = "<group>"; };
+		43B458AA18EE774800F3A835 /* LZFoodDiscountListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZFoodDiscountListDelegate.m; path = Delegates/LZFoodDiscountListDelegate.m; sourceTree = "<group>"; };
+		43B9AB4A18D3ED7400AEC42A /* b_h_market.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b_h_market.png; path = Resource/b_h_market.png; sourceTree = "<group>"; };
+		43B9AB4B18D3ED7400AEC42A /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = burger.png; path = Resource/burger.png; sourceTree = "<group>"; };
+		43B9AB4C18D3ED7400AEC42A /* c_marketplace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = c_marketplace.png; path = Resource/c_marketplace.png; sourceTree = "<group>"; };
+		43B9AB4D18D3ED7400AEC42A /* chicken_noodle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chicken_noodle.png; path = Resource/chicken_noodle.png; sourceTree = "<group>"; };
+		43B9AB4E18D3ED7400AEC42A /* fish_fillet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fish_fillet.png; path = Resource/fish_fillet.png; sourceTree = "<group>"; };
+		43B9AB4F18D3ED7400AEC42A /* gnc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gnc.png; path = Resource/gnc.png; sourceTree = "<group>"; };
+		43B9AB5018D3ED7400AEC42A /* h_mart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = h_mart.png; path = Resource/h_mart.png; sourceTree = "<group>"; };
+		43B9AB5118D3ED7400AEC42A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resource/icon.png; sourceTree = "<group>"; };
+		43B9AB5218D3ED7400AEC42A /* m_f_foods.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = m_f_foods.png; path = Resource/m_f_foods.png; sourceTree = "<group>"; };
+		43B9AB5318D3ED7400AEC42A /* morton_williams.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = morton_williams.png; path = Resource/morton_williams.png; sourceTree = "<group>"; };
+		43B9AB5418D3ED7400AEC42A /* new_york_supermarket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = new_york_supermarket.png; path = Resource/new_york_supermarket.png; sourceTree = "<group>"; };
+		43B9AB5518D3ED7400AEC42A /* paper_plane_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paper_plane_black.png; path = Resource/paper_plane_black.png; sourceTree = "<group>"; };
+		43B9AB5618D3ED7400AEC42A /* steak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = steak.png; path = Resource/steak.png; sourceTree = "<group>"; };
+		43B9AB5718D3ED7400AEC42A /* user_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user_avatar.png; path = Resource/user_avatar.png; sourceTree = "<group>"; };
+		43B9AB5818D3ED7400AEC42A /* whole_foods_market.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whole_foods_market.png; path = Resource/whole_foods_market.png; sourceTree = "<group>"; };
+		43B9AB6C18D3F6D400AEC42A /* mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark.png; sourceTree = "<group>"; };
+		43B9AB6D18D3F6D400AEC42A /* unmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unmark.png; sourceTree = "<group>"; };
+		43B9AB7018D57D6100AEC42A /* LZMarketInfoListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZMarketInfoListDelegate.h; path = Delegates/LZMarketInfoListDelegate.h; sourceTree = "<group>"; };
+		43B9AB7118D57D6100AEC42A /* LZMarketInfoListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZMarketInfoListDelegate.m; path = Delegates/LZMarketInfoListDelegate.m; sourceTree = "<group>"; };
+		43B9AB7318D60BDE00AEC42A /* MarketReview.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MarketReview.plist; sourceTree = "<group>"; };
+		43E4AB1F18C1138900061EB4 /* GreenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E4AB2218C1138900061EB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43E4AB2418C1138900061EB4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		43E4AB2618C1138900061EB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		43E4AB2A18C1138900061EB4 /* GreenDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GreenDemo-Info.plist"; sourceTree = "<group>"; };
+		43E4AB2C18C1138900061EB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43E4AB2E18C1138900061EB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43E4AB3018C1138900061EB4 /* GreenDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GreenDemo-Prefix.pch"; sourceTree = "<group>"; };
+		43E4AB3118C1138900061EB4 /* LZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZAppDelegate.h; sourceTree = "<group>"; };
+		43E4AB3218C1138900061EB4 /* LZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZAppDelegate.m; sourceTree = "<group>"; };
+		43E4AB3518C1138900061EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43E4AB3718C1138900061EB4 /* LZMarketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZMarketViewController.h; sourceTree = "<group>"; };
+		43E4AB3818C1138900061EB4 /* LZMarketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZMarketViewController.m; sourceTree = "<group>"; };
+		43E4AB3A18C1138900061EB4 /* LZRecommendationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZRecommendationViewController.h; sourceTree = "<group>"; };
+		43E4AB3B18C1138900061EB4 /* LZRecommendationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZRecommendationViewController.m; sourceTree = "<group>"; };
+		43E4AB3D18C1138900061EB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GreenDemo/Images.xcassets; sourceTree = "<group>"; };
+		43E4AB4318C1138A00061EB4 /* GreenDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E4AB4418C1138A00061EB4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		43E4AB4C18C1138A00061EB4 /* GreenDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GreenDemoTests-Info.plist"; sourceTree = "<group>"; };
+		43E4AB4E18C1138A00061EB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43E4AB5018C1138A00061EB4 /* GreenDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreenDemoTests.m; sourceTree = "<group>"; };
+		43E4AB5C18C1162400061EB4 /* LZSalesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZSalesViewController.h; sourceTree = "<group>"; };
+		43E4AB5D18C1162400061EB4 /* LZSalesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZSalesViewController.m; sourceTree = "<group>"; };
+		43E4AB5F18C1163800061EB4 /* LZRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZRecipeViewController.h; sourceTree = "<group>"; };
+		43E4AB6018C1163800061EB4 /* LZRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZRecipeViewController.m; sourceTree = "<group>"; };
+		43E4AB6318C1170200061EB4 /* LZMarketListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZMarketListDelegate.h; path = Delegates/LZMarketListDelegate.h; sourceTree = "<group>"; };
+		43E4AB6418C1170200061EB4 /* LZMarketListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZMarketListDelegate.m; path = Delegates/LZMarketListDelegate.m; sourceTree = "<group>"; };
+		43E4AB6718C118FA00061EB4 /* LZGlobalVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZGlobalVars.h; sourceTree = "<group>"; };
+		43E4AB6818C118FA00061EB4 /* LZGlobalVars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZGlobalVars.m; sourceTree = "<group>"; };
+		43E4AB6D18C11C3300061EB4 /* LZSettingViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZSettingViewDelegate.h; path = Delegates/LZSettingViewDelegate.h; sourceTree = "<group>"; };
+		43E4AB6E18C11C3300061EB4 /* LZSettingViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZSettingViewDelegate.m; path = Delegates/LZSettingViewDelegate.m; sourceTree = "<group>"; };
+		43E4AB7918C14F2B00061EB4 /* LZBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZBaseCell.h; path = elements/LZBaseCell.h; sourceTree = "<group>"; };
+		43E4AB7A18C14F2B00061EB4 /* LZBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZBaseCell.m; path = elements/LZBaseCell.m; sourceTree = "<group>"; };
+		43E4AB7C18C1511700061EB4 /* LZMarketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZMarketCell.h; path = elements/LZMarketCell.h; sourceTree = "<group>"; };
+		43E4AB7D18C1511700061EB4 /* LZMarketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZMarketCell.m; path = elements/LZMarketCell.m; sourceTree = "<group>"; };
+		43E4AB8118C448A400061EB4 /* LZMarketMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMarketMapViewController.h; sourceTree = "<group>"; };
+		43E4AB8218C448A400061EB4 /* LZMarketMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMarketMapViewController.m; sourceTree = "<group>"; };
+		43E4AB8418C44C8F00061EB4 /* LZMMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMMBaseViewController.h; sourceTree = "<group>"; };
+		43E4AB8518C44C8F00061EB4 /* LZMMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMMBaseViewController.m; sourceTree = "<group>"; };
+		43E4AB8C18C4E7EF00061EB4 /* LZContentBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZContentBaseViewController.h; sourceTree = "<group>"; };
+		43E4AB8D18C4E7EF00061EB4 /* LZContentBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZContentBaseViewController.m; sourceTree = "<group>"; };
+		43E4AB8F18C4E9B500061EB4 /* LZMarketDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMarketDetailViewController.h; sourceTree = "<group>"; };
+		43E4AB9018C4E9B500061EB4 /* LZMarketDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMarketDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43E4AB1C18C1138900061EB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E4AB2518C1138900061EB4 /* CoreGraphics.framework in Frameworks */,
+				43E4AB2718C1138900061EB4 /* UIKit.framework in Frameworks */,
+				43E4AB2318C1138900061EB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E4AB4018C1138A00061EB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E4AB4518C1138A00061EB4 /* XCTest.framework in Frameworks */,
+				43E4AB4718C1138A00061EB4 /* UIKit.framework in Frameworks */,
+				43E4AB4618C1138A00061EB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		433617AD18D14B2D002F9AE4 /* ListDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				43E4AB6318C1170200061EB4 /* LZMarketListDelegate.h */,
+				43E4AB6418C1170200061EB4 /* LZMarketListDelegate.m */,
+				433617A318D143AC002F9AE4 /* LZVegetableListDelegate.h */,
+				433617A418D143AC002F9AE4 /* LZVegetableListDelegate.m */,
+				433617AA18D149D7002F9AE4 /* LZRecipeListDelegate.h */,
+				433617AB18D149D7002F9AE4 /* LZRecipeListDelegate.m */,
+				43B9AB7018D57D6100AEC42A /* LZMarketInfoListDelegate.h */,
+				43B9AB7118D57D6100AEC42A /* LZMarketInfoListDelegate.m */,
+				43B4588018EDF3AE00F3A835 /* LZSellerListDelegate.h */,
+				43B4588118EDF3AE00F3A835 /* LZSellerListDelegate.m */,
+				43B458A918EE774800F3A835 /* LZFoodDiscountListDelegate.h */,
+				43B458AA18EE774800F3A835 /* LZFoodDiscountListDelegate.m */,
+			);
+			name = ListDelegates;
+			sourceTree = "<group>";
+		};
+		433617B118D14C25002F9AE4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				43E4AB7918C14F2B00061EB4 /* LZBaseCell.h */,
+				43E4AB7A18C14F2B00061EB4 /* LZBaseCell.m */,
+				43E4AB7C18C1511700061EB4 /* LZMarketCell.h */,
+				43E4AB7D18C1511700061EB4 /* LZMarketCell.m */,
+				433617A718D145AD002F9AE4 /* LZVegetableCell.h */,
+				433617A818D145AD002F9AE4 /* LZVegetableCell.m */,
+				433617AE18D14C1F002F9AE4 /* LZReceipeCell.h */,
+				433617AF18D14C1F002F9AE4 /* LZReceipeCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		433617B618D15840002F9AE4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				433617BB18D158B4002F9AE4 /* NS-Extension.h */,
+				433617BC18D158B4002F9AE4 /* NS-Extension.m */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		433617C118D36689002F9AE4 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				433617C218D366E0002F9AE4 /* RecipeDetail.plist */,
+				433617CE18D3AAEB002F9AE4 /* MarketDetail.plist */,
+				43B9AB7318D60BDE00AEC42A /* MarketReview.plist */,
+				435E44B818D636D700D545DD /* VegetableDetail.plist */,
+			);
+			name = plist;
+			sourceTree = "<group>";
+		};
+		433617CA18D3A50E002F9AE4 /* recipe */ = {
+			isa = PBXGroup;
+			children = (
+				43B9AB4B18D3ED7400AEC42A /* burger.png */,
+				43B9AB4D18D3ED7400AEC42A /* chicken_noodle.png */,
+				43B9AB4E18D3ED7400AEC42A /* fish_fillet.png */,
+				43B9AB5618D3ED7400AEC42A /* steak.png */,
+			);
+			name = recipe;
+			sourceTree = "<group>";
+		};
+		433617CB18D3A51B002F9AE4 /* market */ = {
+			isa = PBXGroup;
+			children = (
+				43B9AB4A18D3ED7400AEC42A /* b_h_market.png */,
+				43B9AB4C18D3ED7400AEC42A /* c_marketplace.png */,
+				43B9AB4F18D3ED7400AEC42A /* gnc.png */,
+				43B9AB5018D3ED7400AEC42A /* h_mart.png */,
+				43B9AB5218D3ED7400AEC42A /* m_f_foods.png */,
+				43B9AB5318D3ED7400AEC42A /* morton_williams.png */,
+				43B9AB5418D3ED7400AEC42A /* new_york_supermarket.png */,
+				43B9AB5818D3ED7400AEC42A /* whole_foods_market.png */,
+			);
+			name = market;
+			sourceTree = "<group>";
+		};
+		435E44BA18D6571D00D545DD /* food */ = {
+			isa = PBXGroup;
+			children = (
+				435E44C918D65CBF00D545DD /* Peach.png */,
+				435E44C718D65C9000D545DD /* Apple.png */,
+				435E44C518D65BE000D545DD /* Milk.png */,
+				435E44C318D658C400D545DD /* Onions.png */,
+				435E44C118D6589500D545DD /* Banana.png */,
+				435E44BF18D6582500D545DD /* Carrot.png */,
+				435E44BD18D657DE00D545DD /* Broccoli.png */,
+				435E44BB18D6579800D545DD /* Tomato.png */,
+			);
+			name = food;
+			sourceTree = "<group>";
+		};
+		43B458AC18EF04C000F3A835 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Social;
+			sourceTree = "<group>";
+		};
+		43E4AB1618C1138900061EB4 = {
+			isa = PBXGroup;
+			children = (
+				43E4AB2818C1138900061EB4 /* GreenDemo */,
+				43E4AB3D18C1138900061EB4 /* Images.xcassets */,
+				43E4AB4A18C1138A00061EB4 /* GreenDemoTests */,
+				43E4AB2118C1138900061EB4 /* Frameworks */,
+				43E4AB2018C1138900061EB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43E4AB2018C1138900061EB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43E4AB1F18C1138900061EB4 /* GreenDemo.app */,
+				43E4AB4318C1138A00061EB4 /* GreenDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43E4AB2118C1138900061EB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43E4AB2218C1138900061EB4 /* Foundation.framework */,
+				43E4AB2418C1138900061EB4 /* CoreGraphics.framework */,
+				43E4AB2618C1138900061EB4 /* UIKit.framework */,
+				43E4AB4418C1138A00061EB4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43E4AB2818C1138900061EB4 /* GreenDemo */ = {
+			isa = PBXGroup;
+			children = (
+				43E4AB7F18C155B900061EB4 /* MockData */,
+				433617B618D15840002F9AE4 /* Extension */,
+				43E4AB6618C118D800061EB4 /* GlobalVars */,
+				43E4AB6218C116A400061EB4 /* Delegates */,
+				43E4AB5A18C115F100061EB4 /* ViewControllers */,
+				43E4AB7718C14EED00061EB4 /* Custom */,
+				43E4AB3118C1138900061EB4 /* LZAppDelegate.h */,
+				43E4AB3218C1138900061EB4 /* LZAppDelegate.m */,
+				43E4AB3418C1138900061EB4 /* Main.storyboard */,
+				43E4AB6A18C11BC200061EB4 /* Resource */,
+				43E4AB2918C1138900061EB4 /* Supporting Files */,
+			);
+			path = GreenDemo;
+			sourceTree = "<group>";
+		};
+		43E4AB2918C1138900061EB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43E4AB2A18C1138900061EB4 /* GreenDemo-Info.plist */,
+				43E4AB2B18C1138900061EB4 /* InfoPlist.strings */,
+				43E4AB2E18C1138900061EB4 /* main.m */,
+				43E4AB3018C1138900061EB4 /* GreenDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43E4AB4A18C1138A00061EB4 /* GreenDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				43E4AB5018C1138A00061EB4 /* GreenDemoTests.m */,
+				43E4AB4B18C1138A00061EB4 /* Supporting Files */,
+			);
+			path = GreenDemoTests;
+			sourceTree = "<group>";
+		};
+		43E4AB4B18C1138A00061EB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43E4AB4C18C1138A00061EB4 /* GreenDemoTests-Info.plist */,
+				43E4AB4D18C1138A00061EB4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43E4AB5A18C115F100061EB4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				43B458AC18EF04C000F3A835 /* Social */,
+				43E4AB8818C4DCB200061EB4 /* NaiveContent */,
+				43E4AB8018C4482F00061EB4 /* Map */,
+				43E4AB5B18C115FC00061EB4 /* Tabs */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		43E4AB5B18C115FC00061EB4 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				43E4AB3718C1138900061EB4 /* LZMarketViewController.h */,
+				43E4AB3818C1138900061EB4 /* LZMarketViewController.m */,
+				43E4AB3A18C1138900061EB4 /* LZRecommendationViewController.h */,
+				43E4AB3B18C1138900061EB4 /* LZRecommendationViewController.m */,
+				43E4AB5C18C1162400061EB4 /* LZSalesViewController.h */,
+				43E4AB5D18C1162400061EB4 /* LZSalesViewController.m */,
+				43E4AB5F18C1163800061EB4 /* LZRecipeViewController.h */,
+				43E4AB6018C1163800061EB4 /* LZRecipeViewController.m */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		43E4AB6218C116A400061EB4 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				433617AD18D14B2D002F9AE4 /* ListDelegates */,
+				43E4AB6D18C11C3300061EB4 /* LZSettingViewDelegate.h */,
+				43E4AB6E18C11C3300061EB4 /* LZSettingViewDelegate.m */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		43E4AB6618C118D800061EB4 /* GlobalVars */ = {
+			isa = PBXGroup;
+			children = (
+				43E4AB6718C118FA00061EB4 /* LZGlobalVars.h */,
+				43E4AB6818C118FA00061EB4 /* LZGlobalVars.m */,
+			);
+			name = GlobalVars;
+			sourceTree = "<group>";
+		};
+		43E4AB6A18C11BC200061EB4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				433617C118D36689002F9AE4 /* plist */,
+				43E4AB7218C1426500061EB4 /* demo */,
+				43E4AB7118C1425D00061EB4 /* system */,
+				43E4AB7018C1425200061EB4 /* users */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		43E4AB7018C1425200061EB4 /* users */ = {
+			isa = PBXGroup;
+			children = (
+				43B9AB5718D3ED7400AEC42A /* user_avatar.png */,
+			);
+			name = users;
+			sourceTree = "<group>";
+		};
+		43E4AB7118C1425D00061EB4 /* system */ = {
+			isa = PBXGroup;
+			children = (
+				43B458A118EE682300F3A835 /* arrow-24hours-small.png */,
+				43B458A218EE682300F3A835 /* basket-small.png */,
+				43B458A318EE682300F3A835 /* burger-small.png */,
+				43B458A418EE682300F3A835 /* thumb-up-small.png */,
+				43B4588F18EE565400F3A835 /* basket_dark.png */,
+				43B4588D18EE2E5100F3A835 /* basket_glow.png */,
+				43B4588318EDFBF400F3A835 /* star_rate_5.png */,
+				43B4588418EDFBF400F3A835 /* star_rate_4.png */,
+				43B4588518EDFBF400F3A835 /* star_rate_3.png */,
+				43B4588618EDFBF400F3A835 /* star_rate_2.png */,
+				43B4588718EDFBF400F3A835 /* star_rate_1.png */,
+				43B9AB6C18D3F6D400AEC42A /* mark.png */,
+				43B9AB6D18D3F6D400AEC42A /* unmark.png */,
+				43B9AB5118D3ED7400AEC42A /* icon.png */,
+				43B9AB5518D3ED7400AEC42A /* paper_plane_black.png */,
+			);
+			name = system;
+			sourceTree = "<group>";
+		};
+		43E4AB7218C1426500061EB4 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				435E44BA18D6571D00D545DD /* food */,
+				433617CB18D3A51B002F9AE4 /* market */,
+				433617CA18D3A50E002F9AE4 /* recipe */,
+			);
+			name = demo;
+			sourceTree = "<group>";
+		};
+		43E4AB7718C14EED00061EB4 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				43E4AB7818C14EFE00061EB4 /* elements */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		43E4AB7818C14EFE00061EB4 /* elements */ = {
+			isa = PBXGroup;
+			children = (
+				433617B118D14C25002F9AE4 /* Cell */,
+			);
+			name = elements;
+			sourceTree = "<group>";
+		};
+		43E4AB7F18C155B900061EB4 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MockData;
+			sourceTree = "<group>";
+		};
+		43E4AB8018C4482F00061EB4 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				43E4AB8418C44C8F00061EB4 /* LZMMBaseViewController.h */,
+				43E4AB8518C44C8F00061EB4 /* LZMMBaseViewController.m */,
+				43E4AB8118C448A400061EB4 /* LZMarketMapViewController.h */,
+				43E4AB8218C448A400061EB4 /* LZMarketMapViewController.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		43E4AB8818C4DCB200061EB4 /* NaiveContent */ = {
+			isa = PBXGroup;
+			children = (
+				43E4AB8C18C4E7EF00061EB4 /* LZContentBaseViewController.h */,
+				43E4AB8D18C4E7EF00061EB4 /* LZContentBaseViewController.m */,
+				43E4AB8F18C4E9B500061EB4 /* LZMarketDetailViewController.h */,
+				43E4AB9018C4E9B500061EB4 /* LZMarketDetailViewController.m */,
+				433617BE18D15CA8002F9AE4 /* LZRecipeDetailViewController.h */,
+				433617BF18D15CA8002F9AE4 /* LZRecipeDetailViewController.m */,
+				435E44CB18D6D62B00D545DD /* LZVegetableDetailViewController.h */,
+				435E44CC18D6D62B00D545DD /* LZVegetableDetailViewController.m */,
+			);
+			name = NaiveContent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43E4AB1E18C1138900061EB4 /* GreenDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E4AB5418C1138A00061EB4 /* Build configuration list for PBXNativeTarget "GreenDemo" */;
+			buildPhases = (
+				43E4AB1B18C1138900061EB4 /* Sources */,
+				43E4AB1C18C1138900061EB4 /* Frameworks */,
+				43E4AB1D18C1138900061EB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreenDemo;
+			productName = GreenDemo;
+			productReference = 43E4AB1F18C1138900061EB4 /* GreenDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43E4AB4218C1138A00061EB4 /* GreenDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E4AB5718C1138A00061EB4 /* Build configuration list for PBXNativeTarget "GreenDemoTests" */;
+			buildPhases = (
+				43E4AB3F18C1138A00061EB4 /* Sources */,
+				43E4AB4018C1138A00061EB4 /* Frameworks */,
+				43E4AB4118C1138A00061EB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43E4AB4918C1138A00061EB4 /* PBXTargetDependency */,
+			);
+			name = GreenDemoTests;
+			productName = GreenDemoTests;
+			productReference = 43E4AB4318C1138A00061EB4 /* GreenDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43E4AB1718C1138900061EB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LZ;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = LX;
+				TargetAttributes = {
+					43E4AB4218C1138A00061EB4 = {
+						TestTargetID = 43E4AB1E18C1138900061EB4;
+					};
+				};
+			};
+			buildConfigurationList = 43E4AB1A18C1138900061EB4 /* Build configuration list for PBXProject "GreenDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43E4AB1618C1138900061EB4;
+			productRefGroup = 43E4AB2018C1138900061EB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43E4AB1E18C1138900061EB4 /* GreenDemo */,
+				43E4AB4218C1138A00061EB4 /* GreenDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43E4AB1D18C1138900061EB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435E44BE18D657DE00D545DD /* Broccoli.png in Resources */,
+				43B9AB6618D3ED7400AEC42A /* user_avatar.png in Resources */,
+				435E44C618D65BE000D545DD /* Milk.png in Resources */,
+				435E44C018D6582500D545DD /* Carrot.png in Resources */,
+				43B458A618EE682300F3A835 /* basket-small.png in Resources */,
+				43B9AB6F18D3F6D400AEC42A /* unmark.png in Resources */,
+				43B9AB5A18D3ED7400AEC42A /* burger.png in Resources */,
+				43B9AB7418D60BDE00AEC42A /* MarketReview.plist in Resources */,
+				435E44C218D6589500D545DD /* Banana.png in Resources */,
+				43B9AB5E18D3ED7400AEC42A /* gnc.png in Resources */,
+				43B9AB6318D3ED7400AEC42A /* new_york_supermarket.png in Resources */,
+				43B9AB6518D3ED7400AEC42A /* steak.png in Resources */,
+				43B9AB6118D3ED7400AEC42A /* m_f_foods.png in Resources */,
+				433617C318D366E0002F9AE4 /* RecipeDetail.plist in Resources */,
+				435E44B918D636D700D545DD /* VegetableDetail.plist in Resources */,
+				43E4AB3E18C1138900061EB4 /* Images.xcassets in Resources */,
+				43B9AB6E18D3F6D400AEC42A /* mark.png in Resources */,
+				43B9AB5918D3ED7400AEC42A /* b_h_market.png in Resources */,
+				43B4588C18EDFBF400F3A835 /* star_rate_1.png in Resources */,
+				43E4AB2D18C1138900061EB4 /* InfoPlist.strings in Resources */,
+				43B458A718EE682300F3A835 /* burger-small.png in Resources */,
+				433617CF18D3AAEB002F9AE4 /* MarketDetail.plist in Resources */,
+				43B4588A18EDFBF400F3A835 /* star_rate_3.png in Resources */,
+				43B9AB6018D3ED7400AEC42A /* icon.png in Resources */,
+				43B4588818EDFBF400F3A835 /* star_rate_5.png in Resources */,
+				43B4588E18EE2E5100F3A835 /* basket_glow.png in Resources */,
+				43B9AB5F18D3ED7400AEC42A /* h_mart.png in Resources */,
+				43B458A518EE682300F3A835 /* arrow-24hours-small.png in Resources */,
+				43B458A818EE682300F3A835 /* thumb-up-small.png in Resources */,
+				43B9AB6418D3ED7400AEC42A /* paper_plane_black.png in Resources */,
+				43B4588B18EDFBF400F3A835 /* star_rate_2.png in Resources */,
+				43B9AB5D18D3ED7400AEC42A /* fish_fillet.png in Resources */,
+				43E4AB3618C1138900061EB4 /* Main.storyboard in Resources */,
+				43B9AB6718D3ED7400AEC42A /* whole_foods_market.png in Resources */,
+				435E44CA18D65CBF00D545DD /* Peach.png in Resources */,
+				43B4588918EDFBF400F3A835 /* star_rate_4.png in Resources */,
+				43B4589018EE565400F3A835 /* basket_dark.png in Resources */,
+				435E44C418D658C400D545DD /* Onions.png in Resources */,
+				43B9AB6218D3ED7400AEC42A /* morton_williams.png in Resources */,
+				435E44C818D65C9000D545DD /* Apple.png in Resources */,
+				43B9AB5B18D3ED7400AEC42A /* c_marketplace.png in Resources */,
+				435E44BC18D6579800D545DD /* Tomato.png in Resources */,
+				43B9AB5C18D3ED7400AEC42A /* chicken_noodle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E4AB4118C1138A00061EB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E4AB4F18C1138A00061EB4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43E4AB1B18C1138900061EB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433617A518D143AC002F9AE4 /* LZVegetableListDelegate.m in Sources */,
+				43E4AB7E18C1511700061EB4 /* LZMarketCell.m in Sources */,
+				43E4AB8E18C4E7EF00061EB4 /* LZContentBaseViewController.m in Sources */,
+				43E4AB8318C448A400061EB4 /* LZMarketMapViewController.m in Sources */,
+				433617BD18D158B4002F9AE4 /* NS-Extension.m in Sources */,
+				43E4AB8618C44C8F00061EB4 /* LZMMBaseViewController.m in Sources */,
+				43E4AB6118C1163800061EB4 /* LZRecipeViewController.m in Sources */,
+				43E4AB5E18C1162400061EB4 /* LZSalesViewController.m in Sources */,
+				43B9AB7218D57D6100AEC42A /* LZMarketInfoListDelegate.m in Sources */,
+				433617C018D15CA8002F9AE4 /* LZRecipeDetailViewController.m in Sources */,
+				43E4AB7B18C14F2B00061EB4 /* LZBaseCell.m in Sources */,
+				43E4AB3C18C1138900061EB4 /* LZRecommendationViewController.m in Sources */,
+				433617A918D145AD002F9AE4 /* LZVegetableCell.m in Sources */,
+				43B4588218EDF3AE00F3A835 /* LZSellerListDelegate.m in Sources */,
+				433617AC18D149D7002F9AE4 /* LZRecipeListDelegate.m in Sources */,
+				43E4AB3918C1138900061EB4 /* LZMarketViewController.m in Sources */,
+				43E4AB6918C118FA00061EB4 /* LZGlobalVars.m in Sources */,
+				43E4AB9118C4E9B500061EB4 /* LZMarketDetailViewController.m in Sources */,
+				435E44CD18D6D62B00D545DD /* LZVegetableDetailViewController.m in Sources */,
+				43E4AB3318C1138900061EB4 /* LZAppDelegate.m in Sources */,
+				43E4AB6518C1170200061EB4 /* LZMarketListDelegate.m in Sources */,
+				433617B018D14C1F002F9AE4 /* LZReceipeCell.m in Sources */,
+				43B458AB18EE774800F3A835 /* LZFoodDiscountListDelegate.m in Sources */,
+				43E4AB6F18C11C3300061EB4 /* LZSettingViewDelegate.m in Sources */,
+				43E4AB2F18C1138900061EB4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E4AB3F18C1138A00061EB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E4AB5118C1138A00061EB4 /* GreenDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43E4AB4918C1138A00061EB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43E4AB1E18C1138900061EB4 /* GreenDemo */;
+			targetProxy = 43E4AB4818C1138A00061EB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43E4AB2B18C1138900061EB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43E4AB2C18C1138900061EB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		43E4AB3418C1138900061EB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43E4AB3518C1138900061EB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43E4AB4D18C1138A00061EB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43E4AB4E18C1138A00061EB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43E4AB5218C1138A00061EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		43E4AB5318C1138A00061EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43E4AB5518C1138A00061EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GreenDemo/GreenDemo-Prefix.pch";
+				INFOPLIST_FILE = "GreenDemo/GreenDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		43E4AB5618C1138A00061EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GreenDemo/GreenDemo-Prefix.pch";
+				INFOPLIST_FILE = "GreenDemo/GreenDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		43E4AB5818C1138A00061EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GreenDemo.app/GreenDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GreenDemo/GreenDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GreenDemoTests/GreenDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		43E4AB5918C1138A00061EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GreenDemo.app/GreenDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GreenDemo/GreenDemo-Prefix.pch";
+				INFOPLIST_FILE = "GreenDemoTests/GreenDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43E4AB1A18C1138900061EB4 /* Build configuration list for PBXProject "GreenDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E4AB5218C1138A00061EB4 /* Debug */,
+				43E4AB5318C1138A00061EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43E4AB5418C1138A00061EB4 /* Build configuration list for PBXNativeTarget "GreenDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E4AB5518C1138A00061EB4 /* Debug */,
+				43E4AB5618C1138A00061EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43E4AB5718C1138A00061EB4 /* Build configuration list for PBXNativeTarget "GreenDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E4AB5818C1138A00061EB4 /* Debug */,
+				43E4AB5918C1138A00061EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43E4AB1718C1138900061EB4 /* Project object */;
+}

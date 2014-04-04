@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>recipe_0</key>
+	<dict>
+		<key>title</key>
+		<string>Burger Tricks</string>
+		<key>detail</key>
+		<string>Enjoy great burger tricks to make world class burger</string>
+		<key>picture</key>
+		<string>burger</string>
+		<key>url</key>
+		<string>http://m.allrecipes.com/recipe/44839/chris-bay-area-burger</string>
+	</dict>
+	<key>recipe_1</key>
+	<dict>
+		<key>title</key>
+		<string>Killer Steak</string>
+		<key>detail</key>
+		<string>Killer Steak is a famous dish in Texas Road House</string>
+		<key>picture</key>
+		<string>steak</string>
+		<key>url</key>
+		<string>http://mobile.cdkitchen.com/recipes/swiss_steak449/</string>
+	</dict>
+	<key>recipe_2</key>
+	<dict>
+		<key>title</key>
+		<string>Chicken Noodle</string>
+		<key>detail</key>
+		<string>Learn how to cook chicken noodle </string>
+		<key>picture</key>
+		<string>chicken_noodle</string>
+		<key>url</key>
+		<string>http://m.allrecipes.com/recipe/26460/quick-and-easy-chicken-noodle-soup</string>
+	</dict>
+	<key>recipe_3</key>
+	<dict>
+		<key>title</key>
+		<string>Fish Fillet</string>
+		<key>detail</key>
+		<string>Why not have a delicious fish fillet for dinnter?</string>
+		<key>picture</key>
+		<string>fish_fillet</string>
+		<key>url</key>
+		<string>http://m.allrecipes.com/recipe/24507/crispy-fish-fillets</string>
+	</dict>
+</dict>
+</plist>

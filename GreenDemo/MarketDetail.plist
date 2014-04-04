@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>market_0</key>
+	<dict>
+		<key>title</key>
+		<string>Morton Williams Supermarkets</string>
+		<key>location</key>
+		<string>917 9th Ave,NY
+New York, NY 10019</string>
+		<key>picture</key>
+		<string>morton_williams</string>
+		<key>star_count</key>
+		<string>300</string>
+		<key>marked</key>
+		<false/>
+	</dict>
+	<key>market_1</key>
+	<dict>
+		<key>title</key>
+		<string>New York Supermarket</string>
+		<key>location</key>
+		<string>75 E Broadway, NY</string>
+		<key>picture</key>
+		<string>new_york_supermarket</string>
+		<key>star_count</key>
+		<string>36</string>
+		<key>marked</key>
+		<false/>
+	</dict>
+	<key>market_2</key>
+	<dict>
+		<key>title</key>
+		<string>GNC</string>
+		<key>location</key>
+		<string>431 5th Ave #1, NY</string>
+		<key>picture</key>
+		<string>gnc</string>
+		<key>star_count</key>
+		<string>568</string>
+		<key>marked</key>
+		<false/>
+	</dict>
+	<key>market_3</key>
+	<dict>
+		<key>title</key>
+		<string>H Mart</string>
+		<key>location</key>
+		<string>25 W 32nd St, NY</string>
+		<key>picture</key>
+		<string>h_mart</string>
+		<key>star_count</key>
+		<string>709</string>
+		<key>marked</key>
+		<true/>
+	</dict>
+	<key>market_4</key>
+	<dict>
+		<key>title</key>
+		<string>MyDanoz Fine Foods</string>
+		<key>location</key>
+		<string>271 5th Ave, NY</string>
+		<key>picture</key>
+		<string>m_f_foods</string>
+		<key>star_count</key>
+		<string>173</string>
+		<key>marked</key>
+		<false/>
+	</dict>
+	<key>market_5</key>
+	<dict>
+		<key>title</key>
+		<string>Black Hart Marketing</string>
+		<key>location</key>
+		<string>1140 Avenue of the Americas, NY</string>
+		<key>picture</key>
+		<string>b_h_market</string>
+		<key>star_count</key>
+		<string>637</string>
+		<key>marked</key>
+		<false/>
+	</dict>
+	<key>market_6</key>
+	<dict>
+		<key>title</key>
+		<string>Whole Foods Market</string>
+		<key>location</key>
+		<string>4 Union Square E #4, NY</string>
+		<key>picture</key>
+		<string>whole_foods_market</string>
+		<key>star_count</key>
+		<string>79</string>
+		<key>marked</key>
+		<true/>
+	</dict>
+	<key>market_7</key>
+	<dict>
+		<key>title</key>
+		<string>Chelsea Marketplace
+Chelsea Marketplace
+</string>
+		<key>location</key>
+		<string>245 W 29th St # 1, NY</string>
+		<key>picture</key>
+		<string>c_marketplace</string>
+		<key>star_count</key>
+		<string>77</string>
+		<key>marked</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

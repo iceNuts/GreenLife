@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>vegetable_0</key>
+	<dict>
+		<key>picture</key>
+		<string>Tomato</string>
+		<key>name</key>
+		<string>Tomato</string>
+		<key>star_rate</key>
+		<string>star_rate_4</string>
+		<key>seller</key>
+		<dict>
+			<key>s_0</key>
+			<string>H Mart</string>
+			<key>s_1</key>
+			<string>The Whole Foods</string>
+		</dict>
+		<key>price</key>
+		<dict>
+			<key>p_0</key>
+			<string>1.69</string>
+			<key>p_1</key>
+			<string>1.99</string>
+		</dict>
+		<key>discount</key>
+		<string>30%</string>
+		<key>description</key>
+		<string>The tomato is the edible, often red fruit/berry of the nightshade Solanum lycopersicum, commonly known as a tomato plant.</string>
+	</dict>
+	<key>vegetable_1</key>
+	<dict>
+		<key>picture</key>
+		<string>Broccoli</string>
+		<key>name</key>
+		<string>Broccoli</string>
+		<key>star_rate</key>
+		<string>star_rate_5</string>
+		<key>seller</key>
+		<dict>
+			<key>s_0</key>
+			<string>GNC</string>
+			<key>s_1</key>
+			<string>The Whole Foods</string>
+		</dict>
+		<key>price</key>
+		<dict>
+			<key>p_0</key>
+			<string>1.79</string>
+			<key>p_1</key>
+			<string>1.99</string>
+		</dict>
+		<key>discount</key>
+		<string>15%</string>
+		<key>description</key>
+		<string>Broccoli is an edible green plant in the cabbage family, whose large flowering head is used as a vegetable. The word broccoli, from the Italian plural of broccolo, refers to &quot;the flowering top of a cabbage&quot;. </string>
+	</dict>
+	<key>vegetable_2</key>
+	<dict>
+		<key>picture</key>
+		<string>Carrot</string>
+		<key>name</key>
+		<string>Carrot</string>
+		<key>star_rate</key>
+		<string>star_rate_4</string>
+		<key>seller</key>
+		<dict>
+			<key>s_0</key>
+			<string>H Mart</string>
+			<key>s_1</key>
+			<string>The Whole Foods</string>
+		</dict>
+		<key>price</key>
+		<dict>
+			<key>p_0</key>
+			<string>1.69</string>
+			<key>p_1</key>
+			<string>1.99</string>
+		</dict>
+		<key>discount</key>
+		<string>5%</string>
+		<key>description</key>
+		<string>The carrot is a root vegetable, usually orange in colour, though purple, red, white, and yellow varieties exist. It has a crisp texture when fresh.</string>
+	</dict>
+	<key>vegetable_3</key>
+	<dict>
+		<key>picture</key>
+		<string>Banana</string>
+		<key>name</key>
+		<string>Banana</string>
+		<key>star_rate</key>
+		<string>star_rate_3</string>
+		<key>seller</key>
+		<dict>
+			<key>s_0</key>
+			<string>H Mart</string>
+			<key>s_1</key>
+			<string>The Whole Foods</string>
+		</dict>
+		<key>price</key>
+		<dict>
+			<key>p_0</key>
+			<string>0.99</string>
+			<key>p_1</key>
+			<string>0.79</string>
+		</dict>
+		<key>discount</key>
+		<string>10%</string>
+		<key>description</key>
+		<string>A banana is an edible fruit produced by several kinds of large herbaceous flowering plants in the genus Musa. </string>
+	</dict>
+	<key>vegetable_4</key>
+	<dict>
+		<key>picture</key>
+		<string>Onions</string>
+		<key>name</key>
+		<string>Onions</string>
+		<key>star_rate</key>
+		<string>star_rate_5</string>
+		<key>seller</key>
+		<dict>
+			<key>s_0</key>
+			<string>H Mart</string>
+			<key>s_1</key>
+			<string>The Whole Foods</string>
+		</dict>
+		<key>price</key>
+		<dict>
+			<key>p_0</key>
+			<string>1.69</string>
+			<key>p_1</key>
+			<string>1.99</string>
+		</dict>
+		<key>discount</key>
+		<string>50%</string>
+		<key>description</key>
+		<string>The onion, also known as the bulb onion or common onion, is used as a vegetable and is the most widely cultivated species of the genus Allium.</string>
+	</dict>
+	<key>vegetable_5</key>
+	<dict>
+		<key>picture</key>
+		<string>Milk</string>
+		<key>name</key>
+		<string>Milk</string>
+		<key>star_rate</key>
+		<string>star_rate_4</string>
+		<key>seller</key>
+		<dict>
+			<key>s_0</key>
+			<string>H Mart</string>
+			<key>s_1</key>
+			<string>The Whole Foods</string>
+		</dict>
+		<key>price</key>
+		<dict>
+			<key>p_0</key>
+			<string>1.69</string>
+			<key>p_1</key>
+			<string>1.99</string>
+		</dict>
+		<key>discount</key>
+		<string>5%</string>
+		<key>description</key>
+		<string>Milk is a white liquid produced by the mammary glands of mammals. </string>
+	</dict>
+	<key>vegetable_6</key>
+	<dict>
+		<key>picture</key>
+		<string>Apple</string>
+		<key>name</key>
+		<string>Apple</string>
+		<key>star_rate</key>
+		<string>star_rate_4</string>
+		<key>seller</key>
+		<dict>
+			<key>s_0</key>
+			<string>H Mart</string>
+			<key>s_1</key>
+			<string>The Whole Foods</string>
+		</dict>
+		<key>price</key>
+		<dict>
+			<key>p_0</key>
+			<string>1.59</string>
+			<key>p_1</key>
+			<string>1.99</string>
+		</dict>
+		<key>discount</key>
+		<string>20%</string>
+		<key>description</key>
+		<string>The apple is the pomaceous fruit of the apple tree, species Malus domestica in the rose family. It is one of the most widely cultivated tree fruits, and the most widely known of the many members of genus Malus that are used by humans.</string>
+	</dict>
+	<key>vegetable_7</key>
+	<dict>
+		<key>picture</key>
+		<string>Peach</string>
+		<key>name</key>
+		<string>Peach</string>
+		<key>star_rate</key>
+		<string>star_rate_3</string>
+		<key>seller</key>
+		<dict>
+			<key>s_0</key>
+			<string>New York Supermarket</string>
+			<key>s_1</key>
+			<string>The Whole Foods</string>
+		</dict>
+		<key>price</key>
+		<dict>
+			<key>p_0</key>
+			<string>2.69</string>
+			<key>p_1</key>
+			<string>1.99</string>
+		</dict>
+		<key>discount</key>
+		<string>15%</string>
+		<key>description</key>
+		<string>The peach is a deciduous tree, native to North-West China, in the region between the Tarim basin and the north slopes of the Kunlun Shan mountains, where it was first domesticated and cultivated. It bears an edible juicy fruit also called a peach.</string>
+	</dict>
+</dict>
+</plist>
