@@ -21,6 +21,7 @@
     CGFloat _cellHeight;
     
     LZSettingViewDelegate *_settingViewDelegate;
+    UIViewController *_FBLoginViewController;
     
 }
 
@@ -35,6 +36,7 @@
 @property (nonatomic) CGFloat tabBarHeight;
 
 @property (strong, nonatomic) LZSettingViewDelegate *settingViewDelegate;
+@property (strong, nonatomic) UIViewController *FBLoginViewController;
 
 
 +(id)sharedInstance;

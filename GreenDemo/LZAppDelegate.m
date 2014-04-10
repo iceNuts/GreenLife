@@ -59,9 +59,43 @@
     [sharedManager setStatusBarHeight: statusBarHeight];
     [sharedManager setTabBarHeight: tabBarHeight];
     
+    // FB View pop up if no loggin data found
+    sharedManager.FBLoginViewController = [[LZFacebookLoginViewController alloc] init];
+    
+    bool isFaceLoggedIn = false;
+    NSDate *expireDate = [[[FBSession activeSession] accessTokenData] expirationDate];
+    
+    if (expireDate) {
+        isFaceLoggedIn = ![[[NSDate date] laterDate:[[[FBSession activeSession] accessTokenData] expirationDate]] isEqualToDate: [NSDate date]];
+    }
+    
+    // check token in plist
+    
+    // Show FB Login View
+    if (!isFaceLoggedIn) {
+        [self.window setRootViewController: sharedManager.FBLoginViewController];
+    }
+    
     return YES;
 }
-							
+
+/* FB Login Needed
+ * Hanlde call back url
+ */
+
+- (BOOL)
+    application:(UIApplication *)application
+    openURL:(NSURL *)url
+    sourceApplication:(NSString *)
+    sourceApplication
+    annotation:(id)annotation
+{
+    // Call FBAppCall's handleOpenURL:sourceApplication to handle Facebook app responses
+    BOOL wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication withSession: nil];
+    // You can add your app-specific url handling code here if needed
+    return wasHandled;
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

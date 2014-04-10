@@ -38,6 +38,9 @@
 		43B458A718EE682300F3A835 /* burger-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B458A318EE682300F3A835 /* burger-small.png */; };
 		43B458A818EE682300F3A835 /* thumb-up-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B458A418EE682300F3A835 /* thumb-up-small.png */; };
 		43B458AB18EE774800F3A835 /* LZFoodDiscountListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B458AA18EE774800F3A835 /* LZFoodDiscountListDelegate.m */; };
+		43B458AE18F66F4E00F3A835 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B458AD18F66F4E00F3A835 /* FacebookSDK.framework */; };
+		43B458B118F670A700F3A835 /* LZFacebookLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B458B018F670A700F3A835 /* LZFacebookLoginViewController.m */; };
+		43B458B618F678E400F3A835 /* LZFBLoginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B458B518F678E400F3A835 /* LZFBLoginDelegate.m */; };
 		43B9AB5918D3ED7400AEC42A /* b_h_market.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB4A18D3ED7400AEC42A /* b_h_market.png */; };
 		43B9AB5A18D3ED7400AEC42A /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB4B18D3ED7400AEC42A /* burger.png */; };
 		43B9AB5B18D3ED7400AEC42A /* c_marketplace.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B9AB4C18D3ED7400AEC42A /* c_marketplace.png */; };
@@ -136,6 +139,11 @@
 		43B458A418EE682300F3A835 /* thumb-up-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumb-up-small.png"; sourceTree = "<group>"; };
 		43B458A918EE774800F3A835 /* LZFoodDiscountListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZFoodDiscountListDelegate.h; path = Delegates/LZFoodDiscountListDelegate.h; sourceTree = "<group>"; };
 		43B458AA18EE774800F3A835 /* LZFoodDiscountListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZFoodDiscountListDelegate.m; path = Delegates/LZFoodDiscountListDelegate.m; sourceTree = "<group>"; };
+		43B458AD18F66F4E00F3A835 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		43B458AF18F670A700F3A835 /* LZFacebookLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZFacebookLoginViewController.h; sourceTree = "<group>"; };
+		43B458B018F670A700F3A835 /* LZFacebookLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZFacebookLoginViewController.m; sourceTree = "<group>"; };
+		43B458B418F678E400F3A835 /* LZFBLoginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZFBLoginDelegate.h; sourceTree = "<group>"; };
+		43B458B518F678E400F3A835 /* LZFBLoginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZFBLoginDelegate.m; sourceTree = "<group>"; };
 		43B9AB4A18D3ED7400AEC42A /* b_h_market.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b_h_market.png; path = Resource/b_h_market.png; sourceTree = "<group>"; };
 		43B9AB4B18D3ED7400AEC42A /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = burger.png; path = Resource/burger.png; sourceTree = "<group>"; };
 		43B9AB4C18D3ED7400AEC42A /* c_marketplace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = c_marketplace.png; path = Resource/c_marketplace.png; sourceTree = "<group>"; };
@@ -207,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E4AB2518C1138900061EB4 /* CoreGraphics.framework in Frameworks */,
+				43B458AE18F66F4E00F3A835 /* FacebookSDK.framework in Frameworks */,
 				43E4AB2718C1138900061EB4 /* UIKit.framework in Frameworks */,
 				43E4AB2318C1138900061EB4 /* Foundation.framework in Frameworks */,
 			);
@@ -323,6 +332,10 @@
 		43B458AC18EF04C000F3A835 /* Social */ = {
 			isa = PBXGroup;
 			children = (
+				43B458AF18F670A700F3A835 /* LZFacebookLoginViewController.h */,
+				43B458B018F670A700F3A835 /* LZFacebookLoginViewController.m */,
+				43B458B418F678E400F3A835 /* LZFBLoginDelegate.h */,
+				43B458B518F678E400F3A835 /* LZFBLoginDelegate.m */,
 			);
 			name = Social;
 			sourceTree = "<group>";
@@ -350,6 +363,7 @@
 		43E4AB2118C1138900061EB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43B458AD18F66F4E00F3A835 /* FacebookSDK.framework */,
 				43E4AB2218C1138900061EB4 /* Foundation.framework */,
 				43E4AB2418C1138900061EB4 /* CoreGraphics.framework */,
 				43E4AB2618C1138900061EB4 /* UIKit.framework */,
@@ -688,6 +702,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B458B618F678E400F3A835 /* LZFBLoginDelegate.m in Sources */,
 				433617A518D143AC002F9AE4 /* LZVegetableListDelegate.m in Sources */,
 				43E4AB7E18C1511700061EB4 /* LZMarketCell.m in Sources */,
 				43E4AB8E18C4E7EF00061EB4 /* LZContentBaseViewController.m in Sources */,
@@ -700,6 +715,7 @@
 				433617C018D15CA8002F9AE4 /* LZRecipeDetailViewController.m in Sources */,
 				43E4AB7B18C14F2B00061EB4 /* LZBaseCell.m in Sources */,
 				43E4AB3C18C1138900061EB4 /* LZRecommendationViewController.m in Sources */,
+				43B458B118F670A700F3A835 /* LZFacebookLoginViewController.m in Sources */,
 				433617A918D145AD002F9AE4 /* LZVegetableCell.m in Sources */,
 				43B4588218EDF3AE00F3A835 /* LZSellerListDelegate.m in Sources */,
 				433617AC18D149D7002F9AE4 /* LZRecipeListDelegate.m in Sources */,
@@ -837,6 +853,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GreenDemo/GreenDemo-Prefix.pch";
 				INFOPLIST_FILE = "GreenDemo/GreenDemo-Info.plist";
@@ -850,6 +870,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GreenDemo/GreenDemo-Prefix.pch";
 				INFOPLIST_FILE = "GreenDemo/GreenDemo-Info.plist";

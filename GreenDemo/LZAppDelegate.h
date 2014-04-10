@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "LZGlobalVars.h"
+#import "LZFacebookLoginViewController.h"
 
 @interface LZAppDelegate : UIResponder <UIApplicationDelegate>
 
