@@ -4,6 +4,10 @@
 <dict>
 	<key>market_0</key>
 	<dict>
+		<key>locationX</key>
+		<real>40.768941</real>
+		<key>locationY</key>
+		<real>-73.98499099999999</real>
 		<key>title</key>
 		<string>Morton Williams Supermarkets</string>
 		<key>location</key>
@@ -11,13 +15,15 @@
 New York, NY 10019</string>
 		<key>picture</key>
 		<string>morton_williams</string>
-		<key>star_count</key>
-		<string>300</string>
 		<key>marked</key>
 		<false/>
 	</dict>
 	<key>market_1</key>
 	<dict>
+		<key>locationX</key>
+		<real>40.713393</real>
+		<key>locationY</key>
+		<real>-73.99402000000001</real>
 		<key>title</key>
 		<string>New York Supermarket</string>
 		<key>location</key>
@@ -31,6 +37,10 @@ New York, NY 10019</string>
 	</dict>
 	<key>market_2</key>
 	<dict>
+		<key>locationX</key>
+		<real>40.751198</real>
+		<key>locationY</key>
+		<real>-73.982392</real>
 		<key>title</key>
 		<string>GNC</string>
 		<key>location</key>
@@ -44,6 +54,10 @@ New York, NY 10019</string>
 	</dict>
 	<key>market_3</key>
 	<dict>
+		<key>locationX</key>
+		<real>40.747944</real>
+		<key>locationY</key>
+		<real>-73.98676500000001</real>
 		<key>title</key>
 		<string>H Mart</string>
 		<key>location</key>
@@ -57,6 +71,10 @@ New York, NY 10019</string>
 	</dict>
 	<key>market_4</key>
 	<dict>
+		<key>locationX</key>
+		<real>40.745383</real>
+		<key>locationY</key>
+		<real>-73.98636999999999</real>
 		<key>title</key>
 		<string>MyDanoz Fine Foods</string>
 		<key>location</key>
@@ -70,6 +88,10 @@ New York, NY 10019</string>
 	</dict>
 	<key>market_5</key>
 	<dict>
+		<key>locationX</key>
+		<real>40.756266</real>
+		<key>locationY</key>
+		<real>-73.98280800000001</real>
 		<key>title</key>
 		<string>Black Hart Marketing</string>
 		<key>location</key>
@@ -83,6 +105,10 @@ New York, NY 10019</string>
 	</dict>
 	<key>market_6</key>
 	<dict>
+		<key>locationX</key>
+		<real>40.734672</real>
+		<key>locationY</key>
+		<real>-73.989754</real>
 		<key>title</key>
 		<string>Whole Foods Market</string>
 		<key>location</key>
@@ -96,6 +122,10 @@ New York, NY 10019</string>
 	</dict>
 	<key>market_7</key>
 	<dict>
+		<key>locationX</key>
+		<real>40.748671</real>
+		<key>locationY</key>
+		<real>-73.99462</real>
 		<key>title</key>
 		<string>Chelsea Marketplace
 Chelsea Marketplace

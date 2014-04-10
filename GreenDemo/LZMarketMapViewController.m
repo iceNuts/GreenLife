@@ -55,15 +55,20 @@
 
 - (void)setup
 {
-    CLLocationCoordinate2D location = {40.6700, -73.9400};
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance (location, 20000, 20000);
-    [self.mmView setRegion:region animated:YES];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"MarketDetail" ofType:@"plist"];
+    NSDictionary *marketDict = [[NSMutableDictionary alloc] initWithContentsOfFile:filePath];
     
-    MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
-    point.coordinate = location;
-    point.title = @"Schnuke";
-    [self.mmView addAnnotation: point];
-    
+    for (int i = 0; i < 8; i++) {
+        NSDictionary *detail = [marketDict valueForKey:[NSString stringWithFormat:@"%@%d", @"market_", i]];
+        CLLocationCoordinate2D location = {[[detail valueForKey:@"locationX"] floatValue], [[detail valueForKey:@"locationY"] floatValue]};
+        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance (location, 10000, 10000);
+        [self.mmView setRegion:region animated:YES];
+        MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+        point.coordinate = location;
+        point.title = [detail valueForKey:@"title"];
+        point.subtitle = [detail valueForKey:@"location"];
+        [self.mmView addAnnotation: point];
+    }
 }
 
 
