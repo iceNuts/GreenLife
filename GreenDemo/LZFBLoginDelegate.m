@@ -17,7 +17,9 @@
     
     @try
     {
-        [[[UIApplication sharedApplication] keyWindow] setRootViewController: self.sharedManager.rootViewController];
+        if (!self.isSettingView) {
+            [[[UIApplication sharedApplication] keyWindow] setRootViewController: self.sharedManager.rootViewController];
+        }
     }
     // Do nothing, because it may not have parent controller;
     @catch (NSException * e) {
@@ -27,17 +29,25 @@
 
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user
 {
-    
+    self.userName = user.name;
+    FBRequest* friendsRequest = [FBRequest requestForMyFriends];
+    [friendsRequest startWithCompletionHandler: ^(FBRequestConnection *connection,
+                                                  NSDictionary* result,
+                                                  NSError *error) {
+        NSArray* friends = [result objectForKey:@"data"];
+        self.friendNumber = [NSString stringWithFormat:@"%d", (int)[friends count]];
+    }];
 }
 
 - (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView
 {
-    
+    self.isSettingView = NO;
+    [[FBSession activeSession] closeAndClearTokenInformation];
 }
 
 - (void)loginView:(FBLoginView *)loginView handleError:(NSError *)error
 {
-    
+    // pass
 }
 
 

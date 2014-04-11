@@ -43,7 +43,7 @@
     
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
     self.myParentViewController.title = @"Market";
     UIImageView *mapImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"paper_plane_black"]];

@@ -45,7 +45,26 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     self.myParentViewController.title = @"Recommendations";
-    self.myParentViewController.navigationItem.rightBarButtonItem = nil;
+    self.myParentViewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"SIRI" style:UIBarButtonItemStylePlain target:self action:@selector(launchSiri)];
+}
+
+- (void)launchSiri {
+    [self simulateTouchEvent: kGSEventMenuButtonDown];
+    
+    double delayInSeconds = 1.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [self simulateTouchEvent: kGSEventMenuButtonUp];
+    });
+}
+
+- (void)simulateTouchEvent: (GSEventType)type
+{
+    struct GSEventRecord record;
+    memset(&record, 0, sizeof(record));
+    record.type = type;
+    record.timestamp = GSCurrentEventTimestamp();
+    GSSendSystemEvent(&record);
 }
 
 - (void)didReceiveMemoryWarning

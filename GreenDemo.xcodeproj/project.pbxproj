@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4301C00318F7A0ED00FCDB79 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4301C00218F7A0ED00FCDB79 /* OpenGLES.framework */; };
+		4301C00518F7A0ED00FCDB79 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4301C00418F7A0ED00FCDB79 /* CoreMedia.framework */; };
+		4301C00718F7A10B00FCDB79 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4301C00618F7A10B00FCDB79 /* CoreVideo.framework */; };
+		4301C00918F7A11500FCDB79 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4301C00818F7A11500FCDB79 /* AVFoundation.framework */; };
+		4301C00B18F7A11E00FCDB79 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4301C00A18F7A11E00FCDB79 /* QuartzCore.framework */; };
+		4301C01518F7B24700FCDB79 /* wallpaper-setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 4301C01418F7B24700FCDB79 /* wallpaper-setting.png */; };
+		4301C01718F7B3EB00FCDB79 /* wallpaper-setting-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4301C01618F7B3EB00FCDB79 /* wallpaper-setting-0.png */; };
+		4301C01918F7B46F00FCDB79 /* FBView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4301C01818F7B46F00FCDB79 /* FBView.xib */; };
+		4301C01C18F7C1D000FCDB79 /* GraphicsServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4301C01B18F7C1D000FCDB79 /* GraphicsServices.framework */; };
 		433617A518D143AC002F9AE4 /* LZVegetableListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 433617A418D143AC002F9AE4 /* LZVegetableListDelegate.m */; };
 		433617A918D145AD002F9AE4 /* LZVegetableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 433617A818D145AD002F9AE4 /* LZVegetableCell.m */; };
 		433617AC18D149D7002F9AE4 /* LZRecipeListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 433617AB18D149D7002F9AE4 /* LZRecipeListDelegate.m */; };
@@ -99,6 +108,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4301C00218F7A0ED00FCDB79 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		4301C00418F7A0ED00FCDB79 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4301C00618F7A10B00FCDB79 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		4301C00818F7A11500FCDB79 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4301C00A18F7A11E00FCDB79 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4301C01418F7B24700FCDB79 /* wallpaper-setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wallpaper-setting.png"; path = "../../../Downloads/wallpaper-setting.png"; sourceTree = "<group>"; };
+		4301C01618F7B3EB00FCDB79 /* wallpaper-setting-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wallpaper-setting-0.png"; path = "../../../Downloads/wallpaper-setting-0.png"; sourceTree = "<group>"; };
+		4301C01818F7B46F00FCDB79 /* FBView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBView.xib; sourceTree = "<group>"; };
+		4301C01A18F7C0F400FCDB79 /* GSEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSEvent.h; sourceTree = "<group>"; };
+		4301C01B18F7C1D000FCDB79 /* GraphicsServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsServices.framework; path = ../../Documents/GraphicsServices.framework; sourceTree = "<group>"; };
+		4301C01D18F7C2D900FCDB79 /* GSWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSWindow.h; sourceTree = "<group>"; };
 		433617A318D143AC002F9AE4 /* LZVegetableListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZVegetableListDelegate.h; path = Delegates/LZVegetableListDelegate.h; sourceTree = "<group>"; };
 		433617A418D143AC002F9AE4 /* LZVegetableListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZVegetableListDelegate.m; path = Delegates/LZVegetableListDelegate.m; sourceTree = "<group>"; };
 		433617A718D145AD002F9AE4 /* LZVegetableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZVegetableCell.h; path = elements/LZVegetableCell.h; sourceTree = "<group>"; };
@@ -214,6 +234,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4301C00B18F7A11E00FCDB79 /* QuartzCore.framework in Frameworks */,
+				4301C00918F7A11500FCDB79 /* AVFoundation.framework in Frameworks */,
+				4301C00718F7A10B00FCDB79 /* CoreVideo.framework in Frameworks */,
+				4301C00518F7A0ED00FCDB79 /* CoreMedia.framework in Frameworks */,
+				4301C00318F7A0ED00FCDB79 /* OpenGLES.framework in Frameworks */,
+				4301C01C18F7C1D000FCDB79 /* GraphicsServices.framework in Frameworks */,
 				43E4AB2518C1138900061EB4 /* CoreGraphics.framework in Frameworks */,
 				43B458AE18F66F4E00F3A835 /* FacebookSDK.framework in Frameworks */,
 				43E4AB2718C1138900061EB4 /* UIKit.framework in Frameworks */,
@@ -273,6 +299,8 @@
 			children = (
 				433617BB18D158B4002F9AE4 /* NS-Extension.h */,
 				433617BC18D158B4002F9AE4 /* NS-Extension.m */,
+				4301C01A18F7C0F400FCDB79 /* GSEvent.h */,
+				4301C01D18F7C2D900FCDB79 /* GSWindow.h */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -336,6 +364,7 @@
 				43B458B018F670A700F3A835 /* LZFacebookLoginViewController.m */,
 				43B458B418F678E400F3A835 /* LZFBLoginDelegate.h */,
 				43B458B518F678E400F3A835 /* LZFBLoginDelegate.m */,
+				4301C01818F7B46F00FCDB79 /* FBView.xib */,
 			);
 			name = Social;
 			sourceTree = "<group>";
@@ -363,6 +392,12 @@
 		43E4AB2118C1138900061EB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4301C01B18F7C1D000FCDB79 /* GraphicsServices.framework */,
+				4301C00A18F7A11E00FCDB79 /* QuartzCore.framework */,
+				4301C00818F7A11500FCDB79 /* AVFoundation.framework */,
+				4301C00618F7A10B00FCDB79 /* CoreVideo.framework */,
+				4301C00418F7A0ED00FCDB79 /* CoreMedia.framework */,
+				4301C00218F7A0ED00FCDB79 /* OpenGLES.framework */,
 				43B458AD18F66F4E00F3A835 /* FacebookSDK.framework */,
 				43E4AB2218C1138900061EB4 /* Foundation.framework */,
 				43E4AB2418C1138900061EB4 /* CoreGraphics.framework */,
@@ -486,6 +521,8 @@
 		43E4AB7118C1425D00061EB4 /* system */ = {
 			isa = PBXGroup;
 			children = (
+				4301C01618F7B3EB00FCDB79 /* wallpaper-setting-0.png */,
+				4301C01418F7B24700FCDB79 /* wallpaper-setting.png */,
 				43B458A118EE682300F3A835 /* arrow-24hours-small.png */,
 				43B458A218EE682300F3A835 /* basket-small.png */,
 				43B458A318EE682300F3A835 /* burger-small.png */,
@@ -646,11 +683,13 @@
 				435E44C618D65BE000D545DD /* Milk.png in Resources */,
 				435E44C018D6582500D545DD /* Carrot.png in Resources */,
 				43B458A618EE682300F3A835 /* basket-small.png in Resources */,
+				4301C01518F7B24700FCDB79 /* wallpaper-setting.png in Resources */,
 				43B9AB6F18D3F6D400AEC42A /* unmark.png in Resources */,
 				43B9AB5A18D3ED7400AEC42A /* burger.png in Resources */,
 				43B9AB7418D60BDE00AEC42A /* MarketReview.plist in Resources */,
 				435E44C218D6589500D545DD /* Banana.png in Resources */,
 				43B9AB5E18D3ED7400AEC42A /* gnc.png in Resources */,
+				4301C01718F7B3EB00FCDB79 /* wallpaper-setting-0.png in Resources */,
 				43B9AB6318D3ED7400AEC42A /* new_york_supermarket.png in Resources */,
 				43B9AB6518D3ED7400AEC42A /* steak.png in Resources */,
 				43B9AB6118D3ED7400AEC42A /* m_f_foods.png in Resources */,
@@ -677,6 +716,7 @@
 				43B9AB6718D3ED7400AEC42A /* whole_foods_market.png in Resources */,
 				435E44CA18D65CBF00D545DD /* Peach.png in Resources */,
 				43B4588918EDFBF400F3A835 /* star_rate_4.png in Resources */,
+				4301C01918F7B46F00FCDB79 /* FBView.xib in Resources */,
 				43B4589018EE565400F3A835 /* basket_dark.png in Resources */,
 				435E44C418D658C400D545DD /* Onions.png in Resources */,
 				43B9AB6218D3ED7400AEC42A /* morton_williams.png in Resources */,
@@ -856,9 +896,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/BillZeng/Documents,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GreenDemo/GreenDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/BIllZeng/github0/GreenDemo/GPUImage/framework/source/**",
+				);
 				INFOPLIST_FILE = "GreenDemo/GreenDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -873,9 +919,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/BillZeng/Documents,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GreenDemo/GreenDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/BIllZeng/github0/GreenDemo/GPUImage/framework/source/**",
+				);
 				INFOPLIST_FILE = "GreenDemo/GreenDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LZSettingViewDelegate.h"
 
 @interface LZGlobalVars : NSObject
 {
@@ -20,7 +19,7 @@
     CGFloat _statusBarHeight;
     CGFloat _cellHeight;
     
-    LZSettingViewDelegate *_settingViewDelegate;
+    id _settingViewDelegate;
     UIViewController *_FBLoginViewController;
     
 }
@@ -35,7 +34,7 @@
 @property (nonatomic) CGFloat cellHeight;
 @property (nonatomic) CGFloat tabBarHeight;
 
-@property (strong, nonatomic) LZSettingViewDelegate *settingViewDelegate;
+@property (strong, nonatomic) id settingViewDelegate;
 @property (strong, nonatomic) UIViewController *FBLoginViewController;
 
 

@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LZFacebookLoginViewController.h"
+#import "LZGlobalVars.h"
 
 @interface LZSettingViewDelegate : NSObject
+
+@property (nonatomic, strong) LZGlobalVars *sharedManager;
 
 - (void)showSettings;
 

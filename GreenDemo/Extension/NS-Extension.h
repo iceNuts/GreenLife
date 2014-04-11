@@ -11,5 +11,6 @@
 @interface UIImage (GreenDemo)
 
 - (UIImage *) makeThumbnailOfSize:(CGSize)size; // Get smaller image
+- (UIImage *)imageByApplyingAlpha:(CGFloat) alpha;
 
 @end

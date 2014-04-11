@@ -60,19 +60,16 @@
     [sharedManager setTabBarHeight: tabBarHeight];
     
     // FB View pop up if no loggin data found
-    sharedManager.FBLoginViewController = [[LZFacebookLoginViewController alloc] init];
-    
-    bool isFaceLoggedIn = false;
-    NSDate *expireDate = [[[FBSession activeSession] accessTokenData] expirationDate];
-    
-    if (expireDate) {
-        isFaceLoggedIn = ![[[NSDate date] laterDate:[[[FBSession activeSession] accessTokenData] expirationDate]] isEqualToDate: [NSDate date]];
-    }
+    sharedManager.FBLoginViewController = [[LZFacebookLoginViewController alloc] initWithNibName:@"FBView" bundle:nil];
+
+    NSString *accessToken = [[[FBSession activeSession] accessTokenData] accessToken];
     
     // check token in plist
+    bool isFaceLoggedIn = !(accessToken == nil);
     
     // Show FB Login View
     if (!isFaceLoggedIn) {
+        [(LZFacebookLoginViewController*)sharedManager.FBLoginViewController setSettingViewFlag: NO];
         [self.window setRootViewController: sharedManager.FBLoginViewController];
     }
     

@@ -12,7 +12,18 @@
 
 - (void)showSettings
 {
-    NSLog(@"showSettings action");
+    self.sharedManager = [LZGlobalVars sharedInstance];
+    [(LZFacebookLoginViewController*)self.sharedManager.FBLoginViewController setSettingViewFlag: YES];
+    
+    [UIView transitionWithView: [[UIApplication sharedApplication] keyWindow]
+                      duration: 1
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
+                    animations:^{
+                        [[[UIApplication sharedApplication] keyWindow] setRootViewController: self.sharedManager.FBLoginViewController];
+                    }
+                    completion:nil
+     ];
+    
 }
 
 @end
