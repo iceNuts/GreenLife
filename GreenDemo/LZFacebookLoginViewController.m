@@ -40,48 +40,25 @@
     
     // Logged out
     if ([[[FBSession activeSession] accessTokenData] accessToken] == nil) {
-        // Set background
-        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@""]];
-        
-        self.exitBtn.hidden = YES;
-        self.UserPic.hidden = YES;
-        self.UserName.hidden = YES;
-        self.UserLikePic.hidden = YES;
-        self.UserLikeNumber.hidden = YES;
-        self.UserFriendPic.hidden = YES;
-        self.UserFriendNumber.hidden = YES;
-        
+        [self hideAllView];
+    } else {
+        [self showAllView];
     }
-    // Logged in
-    else {
-        // show user info
-        UIImage *background = [UIImage imageNamed:@"wallpaper-setting-0"];
-        self.view.backgroundColor = [UIColor colorWithPatternImage: background];
-     
-        self.exitBtn.hidden = NO;
-        self.UserPic.hidden = NO;
-        self.UserName.hidden = NO;
-        self.UserLikePic.hidden = NO;
-        self.UserLikeNumber.hidden = NO;
-        self.UserFriendPic.hidden = NO;
-        self.UserFriendNumber.hidden = NO;
-        
-        self.UserName.text = self.delegate.userName;
-        self.UserFriendNumber.text = self.delegate.friendNumber;
-        self.UserLikeNumber.text = [NSString stringWithFormat:@"%d", arc4random()%100];
-        
-        // Setup
-        /*
-         *  TODO
-         */
-        
-        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(performExitAction)];
-        singleTap.numberOfTapsRequired = 1;
-        self.exitBtn.userInteractionEnabled = YES;
-        [self.exitBtn addGestureRecognizer:singleTap];
-
-        
-    }
+    self.UserName.text = self.delegate.userName? self.delegate.userName : @"Jie Jie";
+    self.UserFriendNumber.text = self.delegate.friendNumber? self.delegate.friendNumber : @"2";
+    self.UserLikeNumber.text = [NSString stringWithFormat:@"%d", arc4random()%100];
+    
+    // Setup
+    self.exitBtn.image = [UIImage imageNamed:@"exit"];
+    self.UserPic.image = [UIImage imageNamed:@"meview"];
+    self.UserLikePic.image = [UIImage imageNamed:@"likesview"];
+    self.UserFriendPic.image = [UIImage imageNamed:@"friendview"];
+    
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(performExitAction)];
+    singleTap.numberOfTapsRequired = 1;
+    self.exitBtn.userInteractionEnabled = YES;
+    [self.exitBtn addGestureRecognizer:singleTap];
 }
 
 - (void)performExitAction
@@ -96,9 +73,39 @@
      ];
 }
 
+- (void)showAllView
+{
+    self.exitBtn.hidden = NO;
+    self.UserPic.hidden = NO;
+    self.UserName.hidden = NO;
+    self.UserLikePic.hidden = NO;
+    self.UserLikeNumber.hidden = NO;
+    self.UserFriendPic.hidden = NO;
+    self.UserFriendNumber.hidden = NO;
+}
+
+- (void)hideAllView
+{
+    self.exitBtn.hidden = YES;
+    self.UserPic.hidden = YES;
+    self.UserName.hidden = YES;
+    self.UserLikePic.hidden = YES;
+    self.UserLikeNumber.hidden = YES;
+    self.UserFriendPic.hidden = YES;
+    self.UserFriendNumber.hidden = YES;
+    
+}
+
 - (void)viewDidAppear:(BOOL)animated
 {
     self.FBLoingBtn.hidden = NO;
+    // Set background
+    self.view.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background-firstview"]];
+    
+    if ([[[FBSession activeSession] accessTokenData] accessToken] != nil) {
+        [self showAllView];
+    }
 }
 
 - (void)didReceiveMemoryWarning

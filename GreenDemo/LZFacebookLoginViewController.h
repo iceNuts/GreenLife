@@ -29,7 +29,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *exitBtn;
 
 
-
 - (void)setSettingViewFlag:(BOOL)flag;
+- (void)hideAllView;
 
 @end

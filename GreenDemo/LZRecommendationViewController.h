@@ -10,7 +10,6 @@
 
 #import "LZVegetableListDelegate.h"
 #import "LZGlobalVars.h"
-#import "GSEvent.h"
 
 @interface LZRecommendationViewController : UIViewController
 

@@ -43,6 +43,14 @@
 {
     self.isSettingView = NO;
     [[FBSession activeSession] closeAndClearTokenInformation];
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+
+    [self.sharedManager.FBLoginViewController performSelector: @selector(hideAllView)];
+
+#pragma clang diagnostic pop
+
 }
 
 - (void)loginView:(FBLoginView *)loginView handleError:(NSError *)error
