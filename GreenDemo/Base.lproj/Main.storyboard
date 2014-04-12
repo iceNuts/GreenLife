@@ -86,7 +86,7 @@
         <!--Sales View Controller - Discount-->
         <scene sceneID="BVm-1g-dFw">
             <objects>
-                <viewController id="2dm-jE-bt8" customClass="LZSalesViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="discountViewController" id="2dm-jE-bt8" customClass="LZSalesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UoH-7O-nYi"/>
                         <viewControllerLayoutGuide type="bottom" id="eCu-0c-x0f"/>

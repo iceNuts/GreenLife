@@ -72,6 +72,18 @@
 
 // Set section number
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        self.sharedManager = [LZGlobalVars sharedInstance];
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.foodViewController = [storyboard instantiateViewControllerWithIdentifier:@"discountViewController"];
+        
+        [(UINavigationController*)self.sharedManager.rootViewController pushViewController:self.foodViewController animated:YES];
+    }
+}
+
 - (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     if (section == 0) {
