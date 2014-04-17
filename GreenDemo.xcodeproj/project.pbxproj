@@ -12,10 +12,7 @@
 		4301C00718F7A10B00FCDB79 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4301C00618F7A10B00FCDB79 /* CoreVideo.framework */; };
 		4301C00918F7A11500FCDB79 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4301C00818F7A11500FCDB79 /* AVFoundation.framework */; };
 		4301C00B18F7A11E00FCDB79 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4301C00A18F7A11E00FCDB79 /* QuartzCore.framework */; };
-		4301C01518F7B24700FCDB79 /* wallpaper-setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 4301C01418F7B24700FCDB79 /* wallpaper-setting.png */; };
-		4301C01718F7B3EB00FCDB79 /* wallpaper-setting-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4301C01618F7B3EB00FCDB79 /* wallpaper-setting-0.png */; };
 		4301C01918F7B46F00FCDB79 /* FBView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4301C01818F7B46F00FCDB79 /* FBView.xib */; };
-		43324A2418F874CE00F65159 /* GraphicsServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43324A2318F874CE00F65159 /* GraphicsServices.framework */; };
 		43324A2A18F9C02B00F65159 /* background-firstview.png in Resources */ = {isa = PBXBuildFile; fileRef = 43324A2518F9C02B00F65159 /* background-firstview.png */; };
 		43324A2B18F9C02B00F65159 /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 43324A2618F9C02B00F65159 /* exit.png */; };
 		43324A2C18F9C02B00F65159 /* friendview.png in Resources */ = {isa = PBXBuildFile; fileRef = 43324A2718F9C02B00F65159 /* friendview.png */; };
@@ -29,7 +26,6 @@
 		433617C018D15CA8002F9AE4 /* LZRecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433617BF18D15CA8002F9AE4 /* LZRecipeDetailViewController.m */; };
 		433617C318D366E0002F9AE4 /* RecipeDetail.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433617C218D366E0002F9AE4 /* RecipeDetail.plist */; };
 		433617CF18D3AAEB002F9AE4 /* MarketDetail.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433617CE18D3AAEB002F9AE4 /* MarketDetail.plist */; };
-		433F3F4918F9C83E00372950 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 433F3F4818F9C83E00372950 /* Default-568h@2x.png */; };
 		435E44B918D636D700D545DD /* VegetableDetail.plist in Resources */ = {isa = PBXBuildFile; fileRef = 435E44B818D636D700D545DD /* VegetableDetail.plist */; };
 		435E44BC18D6579800D545DD /* Tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44BB18D6579800D545DD /* Tomato.png */; };
 		435E44BE18D657DE00D545DD /* Broccoli.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44BD18D657DE00D545DD /* Broccoli.png */; };
@@ -119,12 +115,9 @@
 		4301C00618F7A10B00FCDB79 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		4301C00818F7A11500FCDB79 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4301C00A18F7A11E00FCDB79 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		4301C01418F7B24700FCDB79 /* wallpaper-setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wallpaper-setting.png"; path = "../../../Downloads/wallpaper-setting.png"; sourceTree = "<group>"; };
-		4301C01618F7B3EB00FCDB79 /* wallpaper-setting-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wallpaper-setting-0.png"; path = "../../../Downloads/wallpaper-setting-0.png"; sourceTree = "<group>"; };
 		4301C01818F7B46F00FCDB79 /* FBView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBView.xib; sourceTree = "<group>"; };
 		4301C01A18F7C0F400FCDB79 /* GSEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSEvent.h; sourceTree = "<group>"; };
 		4301C01D18F7C2D900FCDB79 /* GSWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSWindow.h; sourceTree = "<group>"; };
-		43324A2318F874CE00F65159 /* GraphicsServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsServices.framework; path = ../../Documents/PrivateFramework_Device/GraphicsServices.framework; sourceTree = "<group>"; };
 		43324A2518F9C02B00F65159 /* background-firstview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-firstview.png"; sourceTree = "<group>"; };
 		43324A2618F9C02B00F65159 /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit.png; sourceTree = "<group>"; };
 		43324A2718F9C02B00F65159 /* friendview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friendview.png; sourceTree = "<group>"; };
@@ -144,7 +137,6 @@
 		433617BF18D15CA8002F9AE4 /* LZRecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZRecipeDetailViewController.m; sourceTree = "<group>"; };
 		433617C218D366E0002F9AE4 /* RecipeDetail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RecipeDetail.plist; sourceTree = "<group>"; };
 		433617CE18D3AAEB002F9AE4 /* MarketDetail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MarketDetail.plist; sourceTree = "<group>"; };
-		433F3F4818F9C83E00372950 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		435E44B818D636D700D545DD /* VegetableDetail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = VegetableDetail.plist; sourceTree = "<group>"; };
 		435E44BB18D6579800D545DD /* Tomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tomato.png; sourceTree = "<group>"; };
 		435E44BD18D657DE00D545DD /* Broccoli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Broccoli.png; sourceTree = "<group>"; };
@@ -251,7 +243,6 @@
 				4301C00718F7A10B00FCDB79 /* CoreVideo.framework in Frameworks */,
 				4301C00518F7A0ED00FCDB79 /* CoreMedia.framework in Frameworks */,
 				4301C00318F7A0ED00FCDB79 /* OpenGLES.framework in Frameworks */,
-				43324A2418F874CE00F65159 /* GraphicsServices.framework in Frameworks */,
 				43E4AB2518C1138900061EB4 /* CoreGraphics.framework in Frameworks */,
 				43B458AE18F66F4E00F3A835 /* FacebookSDK.framework in Frameworks */,
 				43E4AB2718C1138900061EB4 /* UIKit.framework in Frameworks */,
@@ -384,7 +375,6 @@
 		43E4AB1618C1138900061EB4 = {
 			isa = PBXGroup;
 			children = (
-				433F3F4818F9C83E00372950 /* Default-568h@2x.png */,
 				43E4AB2818C1138900061EB4 /* GreenDemo */,
 				43E4AB3D18C1138900061EB4 /* Images.xcassets */,
 				43E4AB4A18C1138A00061EB4 /* GreenDemoTests */,
@@ -405,7 +395,6 @@
 		43E4AB2118C1138900061EB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				43324A2318F874CE00F65159 /* GraphicsServices.framework */,
 				4301C00A18F7A11E00FCDB79 /* QuartzCore.framework */,
 				4301C00818F7A11500FCDB79 /* AVFoundation.framework */,
 				4301C00618F7A10B00FCDB79 /* CoreVideo.framework */,
@@ -539,8 +528,6 @@
 				43324A2718F9C02B00F65159 /* friendview.png */,
 				43324A2818F9C02B00F65159 /* likesview.png */,
 				43324A2918F9C02B00F65159 /* meview.png */,
-				4301C01618F7B3EB00FCDB79 /* wallpaper-setting-0.png */,
-				4301C01418F7B24700FCDB79 /* wallpaper-setting.png */,
 				43B458A118EE682300F3A835 /* arrow-24hours-small.png */,
 				43B458A218EE682300F3A835 /* basket-small.png */,
 				43B458A318EE682300F3A835 /* burger-small.png */,
@@ -707,14 +694,11 @@
 				435E44C018D6582500D545DD /* Carrot.png in Resources */,
 				43B458A618EE682300F3A835 /* basket-small.png in Resources */,
 				43324A2B18F9C02B00F65159 /* exit.png in Resources */,
-				4301C01518F7B24700FCDB79 /* wallpaper-setting.png in Resources */,
-				433F3F4918F9C83E00372950 /* Default-568h@2x.png in Resources */,
 				43B9AB6F18D3F6D400AEC42A /* unmark.png in Resources */,
 				43B9AB5A18D3ED7400AEC42A /* burger.png in Resources */,
 				43B9AB7418D60BDE00AEC42A /* MarketReview.plist in Resources */,
 				435E44C218D6589500D545DD /* Banana.png in Resources */,
 				43B9AB5E18D3ED7400AEC42A /* gnc.png in Resources */,
-				4301C01718F7B3EB00FCDB79 /* wallpaper-setting-0.png in Resources */,
 				43B9AB6318D3ED7400AEC42A /* new_york_supermarket.png in Resources */,
 				43B9AB6518D3ED7400AEC42A /* steak.png in Resources */,
 				43B9AB6118D3ED7400AEC42A /* m_f_foods.png in Resources */,
@@ -933,6 +917,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"/Users/BIllZeng/github0/GreenDemo/GPUImage/framework/source/**",
+					"/Users/BillZeng/github0/GreenDemo/iOS-Headers/iOS7/**",
 				);
 				INFOPLIST_FILE = "GreenDemo/GreenDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -959,6 +944,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"/Users/BIllZeng/github0/GreenDemo/GPUImage/framework/source/**",
+					"/Users/BillZeng/github0/GreenDemo/iOS-Headers/iOS7/**",
 				);
 				INFOPLIST_FILE = "GreenDemo/GreenDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";

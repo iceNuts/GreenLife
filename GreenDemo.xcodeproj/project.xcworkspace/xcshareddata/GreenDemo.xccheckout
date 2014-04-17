@@ -12,6 +12,8 @@
 	<dict>
 		<key>1F746EA5-265D-46F7-B2A2-9038F40B686B</key>
 		<string>https://github.com/BradLarson/GPUImage.git</string>
+		<key>4BDAC0A3-7960-4106-93D9-CFA3C9529F56</key>
+		<string>https://github.com/iolate/SimulateTouch.git</string>
 		<key>A2B9D709-32A7-47C4-B4AB-5F6948000B5D</key>
 		<string>https://github.com/iceNuts/GreenLife.git</string>
 	</dict>
@@ -21,6 +23,8 @@
 	<dict>
 		<key>1F746EA5-265D-46F7-B2A2-9038F40B686B</key>
 		<string>../../GPUImage</string>
+		<key>4BDAC0A3-7960-4106-93D9-CFA3C9529F56</key>
+		<string>../../SimulateTouch</string>
 		<key>A2B9D709-32A7-47C4-B4AB-5F6948000B5D</key>
 		<string>../..</string>
 	</dict>
@@ -47,6 +51,14 @@
 			<string>A2B9D709-32A7-47C4-B4AB-5F6948000B5D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>GreenDemo</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4BDAC0A3-7960-4106-93D9-CFA3C9529F56</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SimulateTouch</string>
 		</dict>
 	</array>
 </dict>

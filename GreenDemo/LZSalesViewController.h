@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LZGlobalVars.h"
 #import "LZFoodDiscountListDelegate.h"
+#import <CoreGraphics/CoreGraphics.h>
 
 @interface LZSalesViewController : UIViewController
 

@@ -48,8 +48,17 @@
     self.myParentViewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(launchSiri)];
 }
 
-- (void)launchSiri {
+//#import "GSEvent.h"
 
+- (void)launchSiri
+{
+//    struct GSEventRecord record;
+//    memset(&record, 0, sizeof(record));
+//    record.type = kGSEventMenuButtonDown;
+//    record.timestamp = GSCurrentEventTimestamp();
+//    GSSendSystemEvent(&record);
+//    record.type = kGSEventMenuButtonUp;
+//    GSSendSystemEvent(&record);
 }
 
 - (void)didReceiveMemoryWarning
