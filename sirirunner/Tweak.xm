@@ -1,4 +1,5 @@
 #import <UIKit/UIKit.h>
+#import "rocketbootstrap.h"
 
 //IPC 
 @interface CPDistributedMessagingCenter
@@ -16,14 +17,15 @@
 	NSLog(@"----------CDPCenter Added----------");
 	CPDistributedMessagingCenter *
 		center = [CPDistributedMessagingCenter centerNamed:@"ic.nuts.disablenc.server"];
+	rocketbootstrap_distributedmessagingcenter_apply(center);
 	[center runServerOnCurrentThread];
 	[center registerForMessageName:@"ic.nuts.currentIdentifier" target:self selector:@selector(siriInvoker)];
 	return %orig;
 }
-%new(v@)
+%new(v@:)
 - (void)siriInvoker{
 	NSLog(@"----------siri launched----------");
-	[[UIApplication sharedApplication] activateAssistantWithOptions:nil withCompletion:nil];
+	[[%c(SBAssistantController) sharedInstanceIfExists] _runActivateAssistantTest: nil];
 }
 %end
 
@@ -32,6 +34,7 @@
 - (void)launchSiri {
 	NSLog(@"----------launchSiri hooked----------");
  	CPDistributedMessagingCenter *mCenter = [CPDistributedMessagingCenter centerNamed:@"ic.nuts.disablenc.server"];
+	rocketbootstrap_distributedmessagingcenter_apply(mCenter);
 	[mCenter sendMessageName:@"ic.nuts.currentIdentifier" userInfo: nil];
 }
 

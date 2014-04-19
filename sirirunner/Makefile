@@ -8,6 +8,8 @@ SiriRunner_FILES = Tweak.xm
 SiriRunner_FRAMEWORKS = UIKit Foundation
 SiriRunner_PRIVATE_FRAMEWORKS = AppSupport
 
+SiriRunner_LIBRARIES=rocketbootstrap
+
 TARGET_IPHONEOS_DEPLOYMENT_VERSION = 7.0
 
 include $(THEOS_MAKE_PATH)/tweak.mk
