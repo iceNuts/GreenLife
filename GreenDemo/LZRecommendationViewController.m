@@ -66,13 +66,9 @@
  */
 - (void)launchSiri
 {
-//    struct GSEventRecord record;
-//    memset(&record, 0, sizeof(record));
-//    record.type = kGSEventMenuButtonDown;
-//    record.timestamp = GSCurrentEventTimestamp();
-//    GSSendSystemEvent(&record);
-//    record.type = kGSEventMenuButtonUp;
-//    GSSendSystemEvent(&record);
+    /* install the dylib for jailbroken device */
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Siri" message:@"Siri is only supported on a jailbroken phone. Jailbreak your phone and install the deb package in the project folder. Siri will be with you :-)" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [alertView show];
 }
 
 - (void)didReceiveMemoryWarning
