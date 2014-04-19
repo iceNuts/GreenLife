@@ -7,9 +7,21 @@
 //
 
 #import "LZRecommendationViewController.h"
+#import <Foundation/Foundation.h>
 
 @interface LZRecommendationViewController ()
 
+@end
+
+/*
+ *  Jailbroken Only
+ */
+@interface CPDistributedMessagingCenter
++ (id)centerNamed:(id)arg1;
+- (BOOL)sendMessageName:(id)arg1 userInfo:(id)arg2;
+- (void)runServerOnCurrentThread;
+- (void)registerForMessageName:(id)arg1 target:(id)arg2 selector:(SEL)arg3;
+- (id)sendMessageAndReceiveReplyName:(id)arg1 userInfo:(id)arg2;
 @end
 
 @implementation LZRecommendationViewController
@@ -48,8 +60,10 @@
     self.myParentViewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(launchSiri)];
 }
 
-//#import "GSEvent.h"
 
+/*
+ * Jailbroken Only
+ */
 - (void)launchSiri
 {
 //    struct GSEventRecord record;

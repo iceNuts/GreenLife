@@ -1,0 +1,10 @@
+Package: com.lizeng.sirirunner
+Name: SiriRunner
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Li Zeng
+Author: Li Zeng
+Section: Tweaks
+Version: 0.0.1-2
+Installed-Size: 48

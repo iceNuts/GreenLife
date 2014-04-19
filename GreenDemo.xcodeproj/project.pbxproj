@@ -36,6 +36,7 @@
 		435E44C818D65C9000D545DD /* Apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44C718D65C9000D545DD /* Apple.png */; };
 		435E44CA18D65CBF00D545DD /* Peach.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44C918D65CBF00D545DD /* Peach.png */; };
 		435E44CD18D6D62B00D545DD /* LZVegetableDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435E44CC18D6D62B00D545DD /* LZVegetableDetailViewController.m */; };
+		4370C17319023953004BFFE6 /* AppSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4370C17219023953004BFFE6 /* AppSupport.framework */; };
 		43B4588218EDF3AE00F3A835 /* LZSellerListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B4588118EDF3AE00F3A835 /* LZSellerListDelegate.m */; };
 		43B4588818EDFBF400F3A835 /* star_rate_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B4588318EDFBF400F3A835 /* star_rate_5.png */; };
 		43B4588918EDFBF400F3A835 /* star_rate_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B4588418EDFBF400F3A835 /* star_rate_4.png */; };
@@ -148,6 +149,7 @@
 		435E44C918D65CBF00D545DD /* Peach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peach.png; sourceTree = "<group>"; };
 		435E44CB18D6D62B00D545DD /* LZVegetableDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZVegetableDetailViewController.h; sourceTree = "<group>"; };
 		435E44CC18D6D62B00D545DD /* LZVegetableDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZVegetableDetailViewController.m; sourceTree = "<group>"; };
+		4370C17219023953004BFFE6 /* AppSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppSupport.framework; sourceTree = "<group>"; };
 		43B4588018EDF3AE00F3A835 /* LZSellerListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZSellerListDelegate.h; path = Delegates/LZSellerListDelegate.h; sourceTree = "<group>"; };
 		43B4588118EDF3AE00F3A835 /* LZSellerListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZSellerListDelegate.m; path = Delegates/LZSellerListDelegate.m; sourceTree = "<group>"; };
 		43B4588318EDFBF400F3A835 /* star_rate_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_rate_5.png; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4370C17319023953004BFFE6 /* AppSupport.framework in Frameworks */,
 				4301C00B18F7A11E00FCDB79 /* QuartzCore.framework in Frameworks */,
 				4301C00918F7A11500FCDB79 /* AVFoundation.framework in Frameworks */,
 				4301C00718F7A10B00FCDB79 /* CoreVideo.framework in Frameworks */,
@@ -395,6 +398,7 @@
 		43E4AB2118C1138900061EB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4370C17219023953004BFFE6 /* AppSupport.framework */,
 				4301C00A18F7A11E00FCDB79 /* QuartzCore.framework */,
 				4301C00818F7A11500FCDB79 /* AVFoundation.framework */,
 				4301C00618F7A10B00FCDB79 /* CoreVideo.framework */,
