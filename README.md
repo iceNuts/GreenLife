@@ -1,8 +1,6 @@
 GreenLife
 =========
 
-iOS Final Project For WUSTL #436 
-
 ###Install Instructions:
 There are two parts for this project: iOS7 xcode project and iOS7 jailbroken Siri feature.
 
