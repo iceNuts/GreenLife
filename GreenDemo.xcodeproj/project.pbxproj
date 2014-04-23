@@ -36,6 +36,7 @@
 		435E44C818D65C9000D545DD /* Apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44C718D65C9000D545DD /* Apple.png */; };
 		435E44CA18D65CBF00D545DD /* Peach.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44C918D65CBF00D545DD /* Peach.png */; };
 		435E44CD18D6D62B00D545DD /* LZVegetableDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435E44CC18D6D62B00D545DD /* LZVegetableDetailViewController.m */; };
+		439715E819076CFA000E91D7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 439715E719076CFA000E91D7 /* Default-568h@2x.png */; };
 		43B4588218EDF3AE00F3A835 /* LZSellerListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B4588118EDF3AE00F3A835 /* LZSellerListDelegate.m */; };
 		43B4588818EDFBF400F3A835 /* star_rate_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B4588318EDFBF400F3A835 /* star_rate_5.png */; };
 		43B4588918EDFBF400F3A835 /* star_rate_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B4588418EDFBF400F3A835 /* star_rate_4.png */; };
@@ -148,6 +149,7 @@
 		435E44C918D65CBF00D545DD /* Peach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peach.png; sourceTree = "<group>"; };
 		435E44CB18D6D62B00D545DD /* LZVegetableDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZVegetableDetailViewController.h; sourceTree = "<group>"; };
 		435E44CC18D6D62B00D545DD /* LZVegetableDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZVegetableDetailViewController.m; sourceTree = "<group>"; };
+		439715E719076CFA000E91D7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		43B4588018EDF3AE00F3A835 /* LZSellerListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZSellerListDelegate.h; path = Delegates/LZSellerListDelegate.h; sourceTree = "<group>"; };
 		43B4588118EDF3AE00F3A835 /* LZSellerListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZSellerListDelegate.m; path = Delegates/LZSellerListDelegate.m; sourceTree = "<group>"; };
 		43B4588318EDFBF400F3A835 /* star_rate_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_rate_5.png; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 		43E4AB1618C1138900061EB4 = {
 			isa = PBXGroup;
 			children = (
+				439715E719076CFA000E91D7 /* Default-568h@2x.png */,
 				43E4AB2818C1138900061EB4 /* GreenDemo */,
 				43E4AB3D18C1138900061EB4 /* Images.xcassets */,
 				43E4AB4A18C1138A00061EB4 /* GreenDemoTests */,
@@ -412,7 +415,6 @@
 		43E4AB2818C1138900061EB4 /* GreenDemo */ = {
 			isa = PBXGroup;
 			children = (
-				43E4AB7F18C155B900061EB4 /* MockData */,
 				433617B618D15840002F9AE4 /* Extension */,
 				43E4AB6618C118D800061EB4 /* GlobalVars */,
 				43E4AB6218C116A400061EB4 /* Delegates */,
@@ -573,13 +575,6 @@
 			name = elements;
 			sourceTree = "<group>";
 		};
-		43E4AB7F18C155B900061EB4 /* MockData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = MockData;
-			sourceTree = "<group>";
-		};
 		43E4AB8018C4482F00061EB4 /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -709,6 +704,7 @@
 				43B9AB5918D3ED7400AEC42A /* b_h_market.png in Resources */,
 				43B4588C18EDFBF400F3A835 /* star_rate_1.png in Resources */,
 				43324A2D18F9C02B00F65159 /* likesview.png in Resources */,
+				439715E819076CFA000E91D7 /* Default-568h@2x.png in Resources */,
 				43E4AB2D18C1138900061EB4 /* InfoPlist.strings in Resources */,
 				43B458A718EE682300F3A835 /* burger-small.png in Resources */,
 				433617CF18D3AAEB002F9AE4 /* MarketDetail.plist in Resources */,
