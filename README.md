@@ -1,4 +1,8 @@
 GreenLife
 =========
 
-iOS Final Project For #436 
+iOS Final Project For WUSTL #436 
+
+Install Instructions:
+
+
