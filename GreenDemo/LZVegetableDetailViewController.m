@@ -38,6 +38,7 @@
     self.sellerList.dataSource = self.sellerListDelegate;
     self.sellerListDelegate.sellerDict = self.sellerDict;
     self.sellerListDelegate.priceDict = self.priceDict;
+    self.sellerListDelegate.foodName = self.foodName.text;
 }
 
 - (void)didReceiveMemoryWarning

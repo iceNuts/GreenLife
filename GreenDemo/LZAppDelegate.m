@@ -24,6 +24,8 @@
     
     [sharedManager setSettingViewDelegate: self.settingDelegate];
     
+    [[[[(UITabBarController*)self.tabViewController tabBar] items] objectAtIndex: 4] setBadgeValue: [NSString stringWithFormat:@"%d", (int)[sharedManager.cartItems count]]];
+        
     // Set Avatar which is Gloabal View
     
     UIImageView *avatar = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 36, 36)];

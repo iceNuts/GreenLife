@@ -16,6 +16,7 @@
     @synchronized(self){
         if (sharedInstance == nil) {
             sharedInstance = [[LZGlobalVars alloc] init];
+            sharedInstance.cartItems = [[NSMutableArray alloc] init];
         }
     }
     return sharedInstance;

@@ -34,6 +34,7 @@
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    self.sharedManager = [LZGlobalVars sharedInstance];
     LZMarketCell *cell = (LZMarketCell *)[tableView dequeueReusableCellWithIdentifier: mockItemCellIdentifer];
     if (!cell) {
         cell = [[LZMarketCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:mockItemCellIdentifer];
@@ -47,6 +48,7 @@
     [buyButton setImage:[UIImage imageNamed:@"basket_dark"] forState:UIControlStateNormal];
     [buyButton setImage:[UIImage imageNamed:@"basket_glow"] forState:UIControlStateSelected];
     [buyButton addTarget:self action:@selector(purchaseAction:) forControlEvents:UIControlEventTouchUpInside];
+    [buyButton setTag: rowNumber];
     cell.accessoryView = buyButton;
     return cell;
 }
@@ -54,7 +56,20 @@
 - (void)purchaseAction:(id) sender
 {
     UIButton *button = (UIButton*)sender;
-    button.selected = YES;
+    button.selected = !button.selected;
+    if (button.selected == YES) {
+        [self.sharedManager.cartItems addObject: self.foodName];
+    }
+    else {
+        for (id obj in self.sharedManager.cartItems) {
+            if ([self.foodName isEqualToString:obj])
+            {
+                [self.sharedManager.cartItems removeObject: obj];
+                break;
+            }
+        }
+    }
+    [[[[(UITabBarController*)self.sharedManager.tabViewController tabBar] items] objectAtIndex: 4] setBadgeValue: [NSString stringWithFormat:@"%d", (int)[self.sharedManager.cartItems count]]];
 }
 
 

@@ -37,6 +37,9 @@
 		435E44CA18D65CBF00D545DD /* Peach.png in Resources */ = {isa = PBXBuildFile; fileRef = 435E44C918D65CBF00D545DD /* Peach.png */; };
 		435E44CD18D6D62B00D545DD /* LZVegetableDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435E44CC18D6D62B00D545DD /* LZVegetableDetailViewController.m */; };
 		439715E819076CFA000E91D7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 439715E719076CFA000E91D7 /* Default-568h@2x.png */; };
+		439715EB19078320000E91D7 /* LZCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 439715EA19078320000E91D7 /* LZCartViewController.m */; };
+		439715ED190783A9000E91D7 /* shopping-cart-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 439715EC190783A9000E91D7 /* shopping-cart-7.png */; };
+		439715F0190784C8000E91D7 /* LZCartListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 439715EF190784C8000E91D7 /* LZCartListDelegate.m */; };
 		43B4588218EDF3AE00F3A835 /* LZSellerListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B4588118EDF3AE00F3A835 /* LZSellerListDelegate.m */; };
 		43B4588818EDFBF400F3A835 /* star_rate_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B4588318EDFBF400F3A835 /* star_rate_5.png */; };
 		43B4588918EDFBF400F3A835 /* star_rate_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B4588418EDFBF400F3A835 /* star_rate_4.png */; };
@@ -150,6 +153,11 @@
 		435E44CB18D6D62B00D545DD /* LZVegetableDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZVegetableDetailViewController.h; sourceTree = "<group>"; };
 		435E44CC18D6D62B00D545DD /* LZVegetableDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZVegetableDetailViewController.m; sourceTree = "<group>"; };
 		439715E719076CFA000E91D7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		439715E919078320000E91D7 /* LZCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCartViewController.h; sourceTree = "<group>"; };
+		439715EA19078320000E91D7 /* LZCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCartViewController.m; sourceTree = "<group>"; };
+		439715EC190783A9000E91D7 /* shopping-cart-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shopping-cart-7.png"; sourceTree = "<group>"; };
+		439715EE190784C8000E91D7 /* LZCartListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZCartListDelegate.h; path = Delegates/LZCartListDelegate.h; sourceTree = "<group>"; };
+		439715EF190784C8000E91D7 /* LZCartListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZCartListDelegate.m; path = Delegates/LZCartListDelegate.m; sourceTree = "<group>"; };
 		43B4588018EDF3AE00F3A835 /* LZSellerListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LZSellerListDelegate.h; path = Delegates/LZSellerListDelegate.h; sourceTree = "<group>"; };
 		43B4588118EDF3AE00F3A835 /* LZSellerListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LZSellerListDelegate.m; path = Delegates/LZSellerListDelegate.m; sourceTree = "<group>"; };
 		43B4588318EDFBF400F3A835 /* star_rate_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_rate_5.png; sourceTree = "<group>"; };
@@ -280,6 +288,8 @@
 				43B4588118EDF3AE00F3A835 /* LZSellerListDelegate.m */,
 				43B458A918EE774800F3A835 /* LZFoodDiscountListDelegate.h */,
 				43B458AA18EE774800F3A835 /* LZFoodDiscountListDelegate.m */,
+				439715EE190784C8000E91D7 /* LZCartListDelegate.h */,
+				439715EF190784C8000E91D7 /* LZCartListDelegate.m */,
 			);
 			name = ListDelegates;
 			sourceTree = "<group>";
@@ -480,6 +490,8 @@
 				43E4AB5D18C1162400061EB4 /* LZSalesViewController.m */,
 				43E4AB5F18C1163800061EB4 /* LZRecipeViewController.h */,
 				43E4AB6018C1163800061EB4 /* LZRecipeViewController.m */,
+				439715E919078320000E91D7 /* LZCartViewController.h */,
+				439715EA19078320000E91D7 /* LZCartViewController.m */,
 			);
 			name = Tabs;
 			sourceTree = "<group>";
@@ -525,6 +537,7 @@
 		43E4AB7118C1425D00061EB4 /* system */ = {
 			isa = PBXGroup;
 			children = (
+				439715EC190783A9000E91D7 /* shopping-cart-7.png */,
 				43324A2518F9C02B00F65159 /* background-firstview.png */,
 				43324A2618F9C02B00F65159 /* exit.png */,
 				43324A2718F9C02B00F65159 /* friendview.png */,
@@ -708,6 +721,7 @@
 				43E4AB2D18C1138900061EB4 /* InfoPlist.strings in Resources */,
 				43B458A718EE682300F3A835 /* burger-small.png in Resources */,
 				433617CF18D3AAEB002F9AE4 /* MarketDetail.plist in Resources */,
+				439715ED190783A9000E91D7 /* shopping-cart-7.png in Resources */,
 				43B4588A18EDFBF400F3A835 /* star_rate_3.png in Resources */,
 				43B9AB6018D3ED7400AEC42A /* icon.png in Resources */,
 				43B4588818EDFBF400F3A835 /* star_rate_5.png in Resources */,
@@ -751,6 +765,7 @@
 			files = (
 				43B458B618F678E400F3A835 /* LZFBLoginDelegate.m in Sources */,
 				433617A518D143AC002F9AE4 /* LZVegetableListDelegate.m in Sources */,
+				439715F0190784C8000E91D7 /* LZCartListDelegate.m in Sources */,
 				43E4AB7E18C1511700061EB4 /* LZMarketCell.m in Sources */,
 				43E4AB8E18C4E7EF00061EB4 /* LZContentBaseViewController.m in Sources */,
 				43E4AB8318C448A400061EB4 /* LZMarketMapViewController.m in Sources */,
@@ -761,6 +776,7 @@
 				43B9AB7218D57D6100AEC42A /* LZMarketInfoListDelegate.m in Sources */,
 				433617C018D15CA8002F9AE4 /* LZRecipeDetailViewController.m in Sources */,
 				43E4AB7B18C14F2B00061EB4 /* LZBaseCell.m in Sources */,
+				439715EB19078320000E91D7 /* LZCartViewController.m in Sources */,
 				43E4AB3C18C1138900061EB4 /* LZRecommendationViewController.m in Sources */,
 				43B458B118F670A700F3A835 /* LZFacebookLoginViewController.m in Sources */,
 				433617A918D145AD002F9AE4 /* LZVegetableCell.m in Sources */,

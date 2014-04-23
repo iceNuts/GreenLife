@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "LZMarketCell.h"
+#import "LZGlobalVars.h"
 
 @interface LZSellerListDelegate : NSObject <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic,strong) NSDictionary *sellerDict;
 @property (nonatomic, strong) NSDictionary *priceDict;
+
+@property (nonatomic, strong) LZGlobalVars *sharedManager;
+@property (nonatomic, strong) NSString *foodName;
 
 @end

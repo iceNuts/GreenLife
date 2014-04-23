@@ -62,6 +62,7 @@
     [buyButton setImage:[UIImage imageNamed:@"basket_dark"] forState:UIControlStateNormal];
     [buyButton setImage:[UIImage imageNamed:@"basket_glow"] forState:UIControlStateSelected];
     [buyButton addTarget:self action:@selector(purchaseAction:) forControlEvents:UIControlEventTouchUpInside];
+    buyButton.tag = rowNumber;
     cell.accessoryView = buyButton;
     return cell;
 }
@@ -69,7 +70,21 @@
 - (void)purchaseAction:(id) sender
 {
     UIButton *button = (UIButton*)sender;
-    button.selected = YES;
+    button.selected = !button.selected;
+    NSDictionary *vege = [self.foodDict valueForKeyPath:[NSString stringWithFormat:@"%@%d", @"vegetable_", (int)button.tag]];
+    if (button.selected == YES) {
+        [self.sharedManager.cartItems addObject: [vege valueForKeyPath:@"name"]];
+    }
+    else {
+        for (id obj in self.sharedManager.cartItems) {
+            if ([[vege valueForKeyPath:@"name"] isEqualToString:obj])
+            {
+                [self.sharedManager.cartItems removeObject: obj];
+                break;
+            }
+        }
+    }
+    [[[[(UITabBarController*)self.sharedManager.tabViewController tabBar] items] objectAtIndex: 4] setBadgeValue: [NSString stringWithFormat:@"%d", (int)[self.sharedManager.cartItems count]]];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -81,6 +96,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    self.sharedManager = [LZGlobalVars sharedInstance];
     return [self.foodDict count];
 }
 

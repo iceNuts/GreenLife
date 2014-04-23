@@ -22,6 +22,8 @@
     id _settingViewDelegate;
     UIViewController *_FBLoginViewController;
     
+    NSMutableArray *_cartItems;
+    
 }
 
 @property (strong, nonatomic) UIViewController *rootViewController;
@@ -36,6 +38,9 @@
 
 @property (strong, nonatomic) id settingViewDelegate;
 @property (strong, nonatomic) UIViewController *FBLoginViewController;
+
+// items
+@property (strong, nonatomic) NSMutableArray *cartItems;
 
 
 +(id)sharedInstance;
