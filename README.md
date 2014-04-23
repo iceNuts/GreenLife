@@ -26,12 +26,12 @@ When this deb file installed, Siri is enabled for our app.
 
 ###Project Features
 We have lots of features in our app:
-Custom table cell
-Like Button
-Facebook integrated
-Recipe using UIWebView 
-Siri integrated
-MapView integrated
+- Custom table cell
+- Like Button
+- Facebook integrated
+- Recipe using UIWebView 
+- Siri integrated
+- MapView integrated
 
 Please note all data is faked and we don't implement the network communication with server.
 
