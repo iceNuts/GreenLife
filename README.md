@@ -33,6 +33,8 @@ We have lots of features in our app:
 
 Please note all data is faked and we don't implement the network communication with server.
 
-
+Please Use facebook account below for a trial:
+- username: facebookgreenlifedemo@gmail.com
+- password: 12345678123
 
 
