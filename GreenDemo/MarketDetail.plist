@@ -7,14 +7,13 @@
 		<key>star_count</key>
 		<string>43</string>
 		<key>locationX</key>
-		<real>40.768941</real>
+		<real>39.835531</real>
 		<key>locationY</key>
-		<real>-73.98499099999999</real>
+		<real>116.178135</real>
 		<key>title</key>
-		<string>Morton Williams Supermarkets</string>
+		<string>ChangXin Farm</string>
 		<key>location</key>
-		<string>917 9th Ave,NY
-New York, NY 10019</string>
+		<string>ChangXinDian, Beijing, China</string>
 		<key>picture</key>
 		<string>morton_williams</string>
 		<key>marked</key>
@@ -23,13 +22,13 @@ New York, NY 10019</string>
 	<key>market_1</key>
 	<dict>
 		<key>locationX</key>
-		<real>40.713393</real>
+		<real>39.833949</real>
 		<key>locationY</key>
-		<real>-73.99402000000001</real>
+		<real>116.178306</real>
 		<key>title</key>
-		<string>New York Supermarket</string>
+		<string>Wong&apos;s Work Farm</string>
 		<key>location</key>
-		<string>75 E Broadway, NY</string>
+		<string>1011 XingLong Road</string>
 		<key>picture</key>
 		<string>new_york_supermarket</string>
 		<key>star_count</key>
@@ -40,13 +39,13 @@ New York, NY 10019</string>
 	<key>market_2</key>
 	<dict>
 		<key>locationX</key>
-		<real>40.751198</real>
+		<real>39.83965</real>
 		<key>locationY</key>
-		<real>-73.982392</real>
+		<real>116.164745</real>
 		<key>title</key>
-		<string>GNC</string>
+		<string>Luck Farm</string>
 		<key>location</key>
-		<string>431 5th Ave #1, NY</string>
+		<string>YangJia Wen Road, FengTai</string>
 		<key>picture</key>
 		<string>gnc</string>
 		<key>star_count</key>
@@ -57,13 +56,13 @@ New York, NY 10019</string>
 	<key>market_3</key>
 	<dict>
 		<key>locationX</key>
-		<real>40.747944</real>
+		<real>39.824161</real>
 		<key>locationY</key>
-		<real>-73.98676500000001</real>
+		<real>116.174293</real>
 		<key>title</key>
-		<string>H Mart</string>
+		<string>Farm Of TaiZi</string>
 		<key>location</key>
-		<string>25 W 32nd St, NY</string>
+		<string>TaiZiYU Road, FengTai</string>
 		<key>picture</key>
 		<string>h_mart</string>
 		<key>star_count</key>
@@ -74,13 +73,13 @@ New York, NY 10019</string>
 	<key>market_4</key>
 	<dict>
 		<key>locationX</key>
-		<real>40.745383</real>
+		<real>39.819118</real>
 		<key>locationY</key>
-		<real>-73.98636999999999</real>
+		<real>116.164508</real>
 		<key>title</key>
-		<string>MyDanoz Fine Foods</string>
+		<string>CouldEve Farm</string>
 		<key>location</key>
-		<string>271 5th Ave, NY</string>
+		<string>1024 YunGang Road, FengTai</string>
 		<key>picture</key>
 		<string>m_f_foods</string>
 		<key>star_count</key>
@@ -91,13 +90,13 @@ New York, NY 10019</string>
 	<key>market_5</key>
 	<dict>
 		<key>locationX</key>
-		<real>40.756266</real>
+		<real>39.807646</real>
 		<key>locationY</key>
-		<real>-73.98280800000001</real>
+		<real>116.174164</real>
 		<key>title</key>
-		<string>Black Hart Marketing</string>
+		<string>OldMan Farm</string>
 		<key>location</key>
-		<string>1140 Avenue of the Americas, NY</string>
+		<string>Double Dragon Road, State Pkway</string>
 		<key>picture</key>
 		<string>b_h_market</string>
 		<key>star_count</key>
@@ -108,13 +107,13 @@ New York, NY 10019</string>
 	<key>market_6</key>
 	<dict>
 		<key>locationX</key>
-		<real>40.734672</real>
+		<real>39.821821</real>
 		<key>locationY</key>
-		<real>-73.989754</real>
+		<real>116.195579</real>
 		<key>title</key>
-		<string>Whole Foods Market</string>
+		<string>GingerCaro Farm</string>
 		<key>location</key>
-		<string>4 Union Square E #4, NY</string>
+		<string>101 Railroad station Pkway</string>
 		<key>picture</key>
 		<string>whole_foods_market</string>
 		<key>star_count</key>
@@ -125,15 +124,13 @@ New York, NY 10019</string>
 	<key>market_7</key>
 	<dict>
 		<key>locationX</key>
-		<real>40.748671</real>
+		<real>39.81925</real>
 		<key>locationY</key>
-		<real>-73.99462</real>
+		<real>116.186181</real>
 		<key>title</key>
-		<string>Chelsea Marketplace
-Chelsea Marketplace
-</string>
+		<string>GloryWay Farm</string>
 		<key>location</key>
-		<string>245 W 29th St # 1, NY</string>
+		<string>201 Gin Road, FengTai</string>
 		<key>picture</key>
 		<string>c_marketplace</string>
 		<key>star_count</key>
